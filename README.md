@@ -35,7 +35,7 @@ These maps are designed to work with **Modbus Monitor XPF**, allowing engineers 
 - ABB M4M  
 - SolarEdge SE5000  
 
-👉 View full device maps and documentation:  
+👉 View full device maps and documentation: 
 https://docs.quantumbitsolutions.com/products/xpf/device-maps/
 
 ---
@@ -47,6 +47,9 @@ Use these device maps directly in Modbus Monitor XPF to eliminate manual setup a
 - 🚀 Download: https://www.modbusmonitor.com/download  
 - 🔍 Compare Tools: https://www.modbusmonitor.com/compare  
 - 🧪 Modbus Tester: https://www.modbusmonitor.com/modbus-tester  
+
+## Modbus HMI dashboard feature
+https://www.modbusmonitor.com/modbus-hmi
 
 ---
 
