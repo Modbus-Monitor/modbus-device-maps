@@ -16,6 +16,15 @@ These maps are designed to work with **Modbus Monitor XPF**, allowing engineers 
 
 ---
 
+## Modbus HMI Dashboard
+
+Visualize Modbus data using built-in dashboards (gauges, trends, and controls) instead of working with raw register values.
+
+👉 Example and details:
+https://www.modbusmonitor.com/modbus-hmi
+
+---
+
 ## Supported Manufacturers
 
 - Schneider Electric
@@ -48,8 +57,6 @@ Use these device maps directly in Modbus Monitor XPF to eliminate manual setup a
 - 🔍 Compare Tools: https://www.modbusmonitor.com/compare  
 - 🧪 Modbus Tester: https://www.modbusmonitor.com/modbus-tester  
 
-## Modbus HMI dashboard feature
-https://www.modbusmonitor.com/modbus-hmi
 
 ---
 
