@@ -1,0 +1,42 @@
+name: Report a register correction
+description: Report an address, type, unit, name, or compatibility issue.
+title: "[Correction]: "
+labels: ["data-correction"]
+body:
+  - type: input
+    id: device
+    attributes:
+      label: Manufacturer and model
+    validations:
+      required: true
+  - type: input
+    id: firmware
+    attributes:
+      label: Firmware or manual revision
+    validations:
+      required: false
+  - type: input
+    id: signal
+    attributes:
+      label: Signal name or displayed address
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Current value and proposed correction
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Public source URL and page/table reference
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety
+      options:
+        - label: I have not included credentials, customer data, or restricted documents.
+          required: true

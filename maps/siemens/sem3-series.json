@@ -1,0 +1,113 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "siemens/sem3-series",
+  "manufacturer": "Siemens",
+  "manufacturer_slug": "siemens",
+  "model": "SEM3 Series",
+  "slug": "sem3-series",
+  "title": "Siemens SEM3 Series Modbus Register Map",
+  "description": "Siemens SEM3 Series Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Current",
+    "Power",
+    "Status"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Monitor 1 current phase 1 Amps",
+      "display_address": "411906",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Monitor 1 power factor phase 1 1",
+      "display_address": "411930",
+      "data_type": "FLOAT32",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "Monitor 1 alarm flags",
+      "display_address": "400200",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Monitor 1 volts phase 1 Volts",
+      "display_address": "411900",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Monitor 2 alarm flags",
+      "display_address": "400201",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Monitor 3 alarm flags",
+      "display_address": "400202",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Monitor 4 alarm flags",
+      "display_address": "400203",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Monitor 5 alarm flags",
+      "display_address": "400204",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Monitor 6 alarm flags",
+      "display_address": "400205",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Monitor 7 alarm flags",
+      "display_address": "400206",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Monitor 8 alarm flags",
+      "display_address": "400207",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Monitor 9 alarm flags",
+      "display_address": "400208",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/siemens/sem3-series/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=siemens/sem3-series",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=siemens/sem3-series"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

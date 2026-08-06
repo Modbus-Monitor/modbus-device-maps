@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "abb/b23-b24",
+  "manufacturer": "ABB",
+  "manufacturer_slug": "abb",
+  "model": "B23 / B24",
+  "slug": "b23-b24",
+  "title": "ABB B23 / B24 Modbus Register Map",
+  "description": "ABB B23 / B24 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Power",
+    "Energy",
+    "Current",
+    "Voltage",
+    "Status",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Voltage L1 N V 2",
+      "display_address": "423297",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current L1 A 2",
+      "display_address": "423309",
+      "data_type": "UINT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Apparent import kVAh kVAh 4",
+      "display_address": "420505",
+      "data_type": "UINT64",
+      "unit": "-",
+      "category": "Power"
+    },
+    {
+      "name": "Active import kWh kWh 4",
+      "display_address": "420481",
+      "data_type": "UINT64",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency Hz 1",
+      "display_address": "423341",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Input 3 Stored state 1",
+      "display_address": "425361",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Active import Tariff 1 kWh 4",
+      "display_address": "420849",
+      "data_type": "UINT64",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Serial number 2",
+      "display_address": "435073",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Active export kWh kWh 4",
+      "display_address": "420485",
+      "data_type": "UINT64",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Active net kWh kWh 4",
+      "display_address": "420489",
+      "data_type": "INT64",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Reactive import kvarh kvarh 4",
+      "display_address": "420493",
+      "data_type": "UINT64",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Reactive export kvarh kvarh 4",
+      "display_address": "420497",
+      "data_type": "UINT64",
+      "unit": "kWh",
+      "category": "Energy"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/abb/b23-b24/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=abb/b23-b24",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=abb/b23-b24"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

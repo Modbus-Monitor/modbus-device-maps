@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "socomec/countis-e50-e53-e50r-e53r",
+  "manufacturer": "Socomec",
+  "manufacturer_slug": "socomec",
+  "model": "Countis E50 E53 E50R E53R",
+  "slug": "countis-e50-e53-e50r-e53r",
+  "title": "Socomec Countis E50 E53 E50R E53R Modbus Register Map",
+  "description": "Socomec Countis E50 E53 E50R E53R Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Socomec Countis E50 E53 E50R E53R Modbus register list, Socomec Countis E50 E53 E50R E53R Modbus table.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Power",
+    "Energy",
+    "Voltage",
+    "Current",
+    "Power Factor",
+    "Status"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Phase to Phase Voltage U12 V",
+      "display_address": "450514",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current Transformer secondary",
+      "display_address": "457345",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Active Power P P W",
+      "display_address": "450536",
+      "data_type": "INT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Partial Positive Active Energy EaP kWh",
+      "display_address": "450780",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "SOCO :4",
+      "display_address": "450000",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "JBUS Table Version EX 101 Version 1 01",
+      "display_address": "450006",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "0 None1 Puls Output2 Communication",
+      "display_address": "440192",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Current Transformer primary A",
+      "display_address": "457346",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Phase to Phase Voltage U23 V",
+      "display_address": "450516",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Phase to Phase Voltage U31 V",
+      "display_address": "450518",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Simple voltage V1 V",
+      "display_address": "450520",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Simple voltage V2 V",
+      "display_address": "450522",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/socomec/countis-e50-e53-e50r-e53r/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/countis-e50-e53-e50r-e53r",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/countis-e50-e53-e50r-e53r"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

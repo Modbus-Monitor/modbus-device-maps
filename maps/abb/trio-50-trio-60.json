@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "abb/trio-50-trio-60",
+  "manufacturer": "ABB",
+  "manufacturer_slug": "abb",
+  "model": "Trio 50 / Trio 60",
+  "slug": "trio-50-trio-60",
+  "title": "ABB Trio 50 / Trio 60 Modbus Register Map",
+  "description": "ABB Trio 50 / Trio 60 Modbus map and register map with sample Modbus registers, register addresses, and solar inverter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Solar Inverter",
+  "protocol": "Modbus",
+  "categories": [
+    "Power",
+    "Status",
+    "Current",
+    "Energy",
+    "Voltage",
+    "Temperature"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Inverter Grid Voltage V",
+      "display_address": "400304",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Inverter Grid Current A",
+      "display_address": "400308",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Dynamic Mode Power Factor Set Point Reactive Power expressed as fixed Power Factor",
+      "display_address": "400201",
+      "data_type": "FLOAT32",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "Daily Energy Wh",
+      "display_address": "401071",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Mean Grid Frequency Hz",
+      "display_address": "401107",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Global State",
+      "display_address": "401051",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Internal Temperature C",
+      "display_address": "401121",
+      "data_type": "FLOAT32",
+      "unit": "degC",
+      "category": "Temperature"
+    },
+    {
+      "name": "Remote On Off",
+      "display_address": "400181",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Accuracy Set unit for Modbus Data Addresses 0507 0508 0511 and 0512 or",
+      "display_address": "400502",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Set communication protocol for serial line RS485 1",
+      "display_address": "401007",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Permanent Mode Power Factor Set Point Reactive Power expressed as fixed Power Factor",
+      "display_address": "400203",
+      "data_type": "FLOAT32",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "Dynamic Mode Active Power Set Point Active Power Curtailment expressed as percentage of Nominal Power in steps",
+      "display_address": "400211",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/abb/trio-50-trio-60/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=abb/trio-50-trio-60",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=abb/trio-50-trio-60"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

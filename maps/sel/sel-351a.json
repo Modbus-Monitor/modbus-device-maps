@@ -1,0 +1,112 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "sel/sel-351a",
+  "manufacturer": "SEL",
+  "manufacturer_slug": "sel",
+  "model": "SEL-351A",
+  "slug": "sel-351a",
+  "title": "SEL SEL-351A Modbus Register Map",
+  "description": "SEL SEL-351A Modbus map and register map with sample Modbus registers, register addresses, and relay overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Relay",
+  "protocol": "Modbus",
+  "categories": [
+    "Energy",
+    "Power Factor"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "ForwardEnergy",
+      "display_address": "300031",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "PFapparentTotal",
+      "display_address": "300027",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Ptrip.6",
+      "display_address": "100001",
+      "data_type": "BIT",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "ReverseEnergy",
+      "display_address": "300033",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "50A1pickup.7",
+      "display_address": "100003",
+      "data_type": "BIT",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "50A2pickup.4",
+      "display_address": "100003",
+      "data_type": "BIT",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "50A3pickup.1",
+      "display_address": "100003",
+      "data_type": "BIT",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "50B1pickup.6",
+      "display_address": "100003",
+      "data_type": "BIT",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "50B2pickup.3",
+      "display_address": "100003",
+      "data_type": "BIT",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "50B3pickup.0",
+      "display_address": "100003",
+      "data_type": "BIT",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "50C1pickup.5",
+      "display_address": "100003",
+      "data_type": "BIT",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "50C2pickup.2",
+      "display_address": "100003",
+      "data_type": "BIT",
+      "unit": "-",
+      "category": "General"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/sel/sel-351a/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=sel/sel-351a",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=sel/sel-351a"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

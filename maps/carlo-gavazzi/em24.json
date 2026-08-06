@@ -1,0 +1,115 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "carlo-gavazzi/em24",
+  "manufacturer": "Carlo Gavazzi",
+  "manufacturer_slug": "carlo-gavazzi",
+  "model": "EM24",
+  "slug": "em24",
+  "title": "Carlo Gavazzi EM24 Modbus Register Map",
+  "description": "Carlo Gavazzi EM24 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Energy",
+    "Voltage",
+    "Power Factor",
+    "Status",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "V L1 N",
+      "display_address": "300001",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "Voltage"
+    },
+    {
+      "name": "KWh TOT",
+      "display_address": "300063",
+      "data_type": "INT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Hz",
+      "display_address": "300056",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Frequency"
+    },
+    {
+      "name": "PF L1",
+      "display_address": "300051",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Digital input status",
+      "display_address": "300769",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "A L1",
+      "display_address": "300013",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Version code",
+      "display_address": "300771",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "V L2 N",
+      "display_address": "300003",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "Voltage"
+    },
+    {
+      "name": "V L3 N",
+      "display_address": "300005",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "Voltage"
+    },
+    {
+      "name": "V L1 L2",
+      "display_address": "300007",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "Voltage"
+    },
+    {
+      "name": "V L2 L3",
+      "display_address": "300009",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "Voltage"
+    },
+    {
+      "name": "V L3 L1",
+      "display_address": "300011",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "Voltage"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/carlo-gavazzi/em24/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=carlo-gavazzi/em24",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=carlo-gavazzi/em24"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

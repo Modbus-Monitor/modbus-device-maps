@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "janitza/umg605",
+  "manufacturer": "Janitza",
+  "manufacturer_slug": "janitza",
+  "model": "UMG605",
+  "slug": "umg605",
+  "title": "Janitza UMG605 Modbus Register Map",
+  "description": "Janitza UMG605 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Janitza UMG605 Modbus register, Janitza UMG605 Modbus address list.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Harmonics",
+    "Power",
+    "Status",
+    "Power Factor",
+    "Energy",
+    "Temperature"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Voltage L1 N V G_ULN_0",
+      "display_address": "319000",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Apparent current L1 N A G_ILN_0",
+      "display_address": "319012",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Real power L1 N W G_PLN_0",
+      "display_address": "319020",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Real energy L1 Wh G_WH_0",
+      "display_address": "319054",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Measured frequency Hz G_FREQ",
+      "display_address": "319050",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "PFLN_0",
+      "display_address": "403893",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "EMAX_D_STATUS_0",
+      "display_address": "307066",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "EXT_TEMPERATUR",
+      "display_address": "404209",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Temperature"
+    },
+    {
+      "name": "Harmonic thd u L1 N G_THD_ULN_0",
+      "display_address": "319110",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "Vector sum ini1i2i3 A G_I_SUM3",
+      "display_address": "319018",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "BAUD485",
+      "display_address": "306864",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Voltage L2 N V G_ULN_1",
+      "display_address": "319002",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/janitza/umg605/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=janitza/umg605",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=janitza/umg605"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

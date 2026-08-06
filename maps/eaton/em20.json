@@ -1,0 +1,112 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "eaton/em20",
+  "manufacturer": "Eaton",
+  "manufacturer_slug": "eaton",
+  "model": "EM20",
+  "slug": "em20",
+  "title": "Eaton EM20 Modbus Register Map",
+  "description": "Eaton EM20 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Demand",
+    "Energy"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "TotalEnergy",
+      "display_address": "400067",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "DemandTotalWatts",
+      "display_address": "400043",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "ACVAN",
+      "display_address": "400001",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "DemandVAs",
+      "display_address": "400045",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "DemandWattsA",
+      "display_address": "400047",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "DemandVAsA",
+      "display_address": "400049",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "DemandWattsB",
+      "display_address": "400051",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "DemandVAsB",
+      "display_address": "400053",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "PeakDemandWatts",
+      "display_address": "400055",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "PeakDemandVAs",
+      "display_address": "400057",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "PeakDemandVAsA",
+      "display_address": "400059",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "PeakDemandWattsA",
+      "display_address": "400059",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/eaton/em20/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=eaton/em20",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=eaton/em20"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

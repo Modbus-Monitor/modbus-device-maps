@@ -1,0 +1,113 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "siemens/sicam-p",
+  "manufacturer": "Siemens",
+  "manufacturer_slug": "siemens",
+  "model": "SICAM P",
+  "slug": "sicam-p",
+  "title": "Siemens SICAM P Modbus Register Map",
+  "description": "Siemens SICAM P Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Harmonics",
+    "Power Factor",
+    "Status"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "PF L1",
+      "display_address": "400258",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Status of Binary Outputs and Device",
+      "display_address": "400128",
+      "data_type": "BIT",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "THDU L1",
+      "display_address": "400280",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "MLFB:16",
+      "display_address": "400000",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Serial number:10",
+      "display_address": "400019",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Status of Binary Inputs",
+      "display_address": "400129",
+      "data_type": "BIT",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Status of Overflow at Measuring",
+      "display_address": "400199",
+      "data_type": "BIT",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "PF L2",
+      "display_address": "400260",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "PF L3",
+      "display_address": "400262",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "PF",
+      "display_address": "400264",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "THDU L2",
+      "display_address": "400282",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "THDU L3",
+      "display_address": "400284",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Harmonics"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/siemens/sicam-p/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=siemens/sicam-p",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=siemens/sicam-p"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "eaton/iq-dp-4000",
+  "manufacturer": "Eaton",
+  "manufacturer_slug": "eaton",
+  "model": "IQ DP 4000",
+  "slug": "iq-dp-4000",
+  "title": "Eaton IQ DP 4000 Modbus Register Map",
+  "description": "Eaton IQ DP 4000 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Harmonics",
+    "Demand",
+    "Energy",
+    "Power",
+    "Power Factor",
+    "Status"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Real power W",
+      "display_address": "306006",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Forward real energy Wh",
+      "display_address": "307004",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency Hz",
+      "display_address": "311000",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Pf displacement",
+      "display_address": "306218",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Peak demand forward watts W",
+      "display_address": "307222",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Status",
+      "display_address": "303000",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Percent thd la",
+      "display_address": "309436",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "Vab V",
+      "display_address": "304002",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Peak demand reverse watts W",
+      "display_address": "307264",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Peak demand lagging vars VAr",
+      "display_address": "307305",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Peak demand leading vars VAr",
+      "display_address": "307347",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Peak demand la A",
+      "display_address": "305014",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/eaton/iq-dp-4000/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=eaton/iq-dp-4000",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=eaton/iq-dp-4000"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

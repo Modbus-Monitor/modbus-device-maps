@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "schneider-electric/iem3000",
+  "manufacturer": "Schneider Electric",
+  "manufacturer_slug": "schneider-electric",
+  "model": "iEM3000",
+  "slug": "iem3000",
+  "title": "Schneider Electric iEM3000 Modbus Register Map",
+  "description": "Schneider Electric iEM3000 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Energy",
+    "Power",
+    "Current",
+    "Voltage",
+    "Status",
+    "Demand"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Voltage L1 L2 V",
+      "display_address": "403020",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "I1 phase 1 current A",
+      "display_address": "403000",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Active power phase 1 kW",
+      "display_address": "403054",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Total active energy import Wh",
+      "display_address": "403204",
+      "data_type": "INT64",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency Hz",
+      "display_address": "403110",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Demand method",
+      "display_address": "403701",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Digital input status bit only bit 1 is used",
+      "display_address": "408905",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Digital input control mode",
+      "display_address": "407274",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "MeterName:20",
+      "display_address": "400029",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Protocol 0Modbus",
+      "display_address": "406499",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Digital output control mode status",
+      "display_address": "409673",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "I2 phase 2 current A",
+      "display_address": "403002",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Current"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/schneider-electric/iem3000/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=schneider-electric/iem3000",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=schneider-electric/iem3000"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "siemens/sentron-pac-2200",
+  "manufacturer": "Siemens",
+  "manufacturer_slug": "siemens",
+  "model": "PAC2200",
+  "slug": "sentron-pac-2200",
+  "title": "Siemens PAC2200 Modbus Register Map",
+  "description": "Siemens PAC2200 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Power",
+    "Current",
+    "Voltage",
+    "Energy",
+    "Status",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Voltage UL1 N",
+      "display_address": "400002",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current L1",
+      "display_address": "400014",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Apparent power L1",
+      "display_address": "400020",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Secondary total of active energy im port",
+      "display_address": "400962",
+      "data_type": "DOUBLE64",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency",
+      "display_address": "400056",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Device diagnostics and device status",
+      "display_address": "400206",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Active tariff",
+      "display_address": "400212",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Voltage UL2 N",
+      "display_address": "400004",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Voltage UL3 N",
+      "display_address": "400006",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Voltage UL1 L2",
+      "display_address": "400008",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Voltage UL2 L3",
+      "display_address": "400010",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Voltage UL3 L1",
+      "display_address": "400012",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/siemens/sentron-pac-2200/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=siemens/sentron-pac-2200",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=siemens/sentron-pac-2200"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

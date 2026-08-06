@@ -1,0 +1,69 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "schneider-electric/pm210",
+  "manufacturer": "Schneider Electric",
+  "manufacturer_slug": "schneider-electric",
+  "model": "PM210",
+  "slug": "pm210",
+  "title": "Schneider Electric PM210 Modbus Register Map",
+  "description": "Schneider Electric PM210 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Status"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Command Status",
+      "display_address": "407032",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Command",
+      "display_address": "407015",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Command Parameters",
+      "display_address": "407016",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Command Result",
+      "display_address": "407033",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Command Data Location Register Number",
+      "display_address": "407034",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Command Data Area",
+      "display_address": "407035",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Communication"
+    }
+  ],
+  "register_count": 6,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/schneider-electric/pm210/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=schneider-electric/pm210",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=schneider-electric/pm210"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

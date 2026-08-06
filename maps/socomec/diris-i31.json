@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "socomec/diris-i31",
+  "manufacturer": "Socomec",
+  "manufacturer_slug": "socomec",
+  "model": "DIRIS I31",
+  "slug": "diris-i31",
+  "title": "Socomec DIRIS I31 Modbus Register Map",
+  "description": "Socomec DIRIS I31 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Socomec DIRIS I31 Modbus register list, Socomec DIRIS I31 Modbus table.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Energy",
+    "Power",
+    "Voltage",
+    "Status",
+    "Current",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Ph N Voltage V1 V",
+      "display_address": "418444",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current I1 mA",
+      "display_address": "418458",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Total active power W",
+      "display_address": "418476",
+      "data_type": "INT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Total Positive active Energy EaP kWh",
+      "display_address": "419841",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency mHz",
+      "display_address": "418442",
+      "data_type": "UINT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Load status",
+      "display_address": "418432",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "SOCO :4",
+      "display_address": "450000",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "MODBUS Table Version",
+      "display_address": "450006",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Ph N Voltage V2 V",
+      "display_address": "418446",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Ph N Voltage V3 V",
+      "display_address": "418448",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Ph Ph Voltage U12 V",
+      "display_address": "418452",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Ph Ph Voltage U23 V",
+      "display_address": "418454",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/socomec/diris-i31/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/diris-i31",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/diris-i31"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

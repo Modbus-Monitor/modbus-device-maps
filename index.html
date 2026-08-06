@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modbus Device Maps — Public JSON Register Previews</title>
+    <meta name="description" content="Search public JSON previews of Modbus register maps for Siemens, Schneider Electric, ABB, Huawei, SolarEdge, Eaton, and industrial devices.">
+    <link rel="canonical" href="https://modbus-monitor.github.io/modbus-device-maps/">
+    <meta name="theme-color" content="#071a24">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Modbus Device Maps">
+    <meta property="og:description" content="Search machine-readable Modbus register-map previews and open the complete device documentation.">
+    <meta property="og:url" content="https://modbus-monitor.github.io/modbus-device-maps/">
+    <meta property="og:image" content="https://modbus-monitor.github.io/modbus-device-maps/assets/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Modbus Device Maps">
+    <meta name="twitter:description" content="Public JSON register-map previews for industrial devices.">
+    <meta name="twitter:image" content="https://modbus-monitor.github.io/modbus-device-maps/assets/og.png">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "DataCatalog",
+        "name": "Modbus Device Maps",
+        "description": "Public machine-readable previews of Modbus device register maps.",
+        "url": "https://modbus-monitor.github.io/modbus-device-maps/",
+        "sameAs": [
+          "https://github.com/Modbus-Monitor/modbus-device-maps",
+          "https://docs.quantumbitsolutions.com/products/xpf/device-maps/"
+        ],
+        "creator": {
+          "@type": "Organization",
+          "name": "Quantum Bit Solutions",
+          "url": "https://www.quantumbitsolutions.com/"
+        },
+        "dataset": {
+          "@type": "Dataset",
+          "name": "Modbus Device Map Preview Catalog",
+          "description": "A searchable collection of normalized sample registers for industrial Modbus devices.",
+          "isAccessibleForFree": true,
+          "license": "https://github.com/Modbus-Monitor/modbus-device-maps/blob/main/DATA_LICENSE.md",
+          "distribution": {
+            "@type": "DataDownload",
+            "encodingFormat": "application/json",
+            "contentUrl": "https://modbus-monitor.github.io/modbus-device-maps/catalog.json"
+          }
+        }
+      }
+    </script>
+    <script src="data/catalog.js" defer></script>
+    <script src="assets/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#catalog">Skip to the catalog</a>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Modbus Device Maps home">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span>Modbus Device Maps</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="https://docs.quantumbitsolutions.com/products/xpf/device-maps/">Documentation</a>
+        <a href="https://github.com/Modbus-Monitor/modbus-device-maps">GitHub</a>
+        <a class="nav-cta" href="https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=site-nav">Get XPF</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">OPEN ENGINEERING REFERENCE</p>
+          <h1>Find the registers.<br><span>Start polling sooner.</span></h1>
+          <p class="hero-lede">Search machine-readable Modbus map previews for meters, inverters, UPS systems, relays, and industrial equipment. Open the JSON or continue to the complete device guide.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#catalog">Browse public maps</a>
+            <a class="button button-secondary" href="https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=site-hero">Use full maps in XPF</a>
+          </div>
+        </div>
+        <aside class="signal-panel" aria-label="Catalog summary">
+          <div class="signal-header">
+            <span>CATALOG.STATUS</span>
+            <span class="live-dot">PUBLIC</span>
+          </div>
+          <div class="metric-grid">
+            <div><strong id="mapMetric">101</strong><span>map previews</span></div>
+            <div><strong id="manufacturerMetric">21</strong><span>manufacturers</span></div>
+            <div><strong>JSON</strong><span>validated format</span></div>
+            <div><strong>6–12</strong><span>signals per preview</span></div>
+          </div>
+          <div class="register-sample" aria-hidden="true">
+            <span>403020</span><span>Voltage A-B</span><span class="status-value">FLOAT32</span>
+            <span>403110</span><span>Frequency</span><span class="status-value">Hz</span>
+            <span>402700</span><span>Active energy</span><span class="status-value">kWh</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="trust-strip" aria-label="Catalog qualities">
+        <span>✓ Human-readable names</span>
+        <span>✓ Register addresses</span>
+        <span>✓ Data types and units</span>
+        <span>✓ Canonical device guides</span>
+      </section>
+
+      <section class="catalog-section" id="catalog">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">DEVICE CATALOG</p>
+            <h2>Search public map previews</h2>
+          </div>
+          <p>Popular and frequently requested maps appear first. Filter by model, manufacturer, device type, or signal category.</p>
+        </div>
+
+        <form class="filters" role="search" onsubmit="return false">
+          <label class="search-field">
+            <span class="visually-hidden">Search maps</span>
+            <span aria-hidden="true">⌕</span>
+            <input id="searchInput" type="search" autocomplete="off" placeholder="Search PAC2200, PM8000, SUN2000, power meter…">
+          </label>
+          <label>
+            <span class="visually-hidden">Manufacturer</span>
+            <select id="manufacturerFilter"><option value="">All manufacturers</option></select>
+          </label>
+          <label>
+            <span class="visually-hidden">Device type</span>
+            <select id="typeFilter"><option value="">All device types</option></select>
+          </label>
+        </form>
+
+        <div class="results-bar">
+          <p id="resultCount" aria-live="polite">Loading maps…</p>
+          <a href="catalog.json">Download catalog.json</a>
+        </div>
+        <div class="map-grid" id="mapGrid" aria-live="polite"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <h3>No matching preview yet</h3>
+          <p>Try a manufacturer or shorter model name, or request the device on GitHub.</p>
+          <a class="button button-secondary" href="https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose">Request a map</a>
+        </div>
+      </section>
+
+      <section class="product-section">
+        <div>
+          <p class="eyebrow">FROM REFERENCE TO LIVE DATA</p>
+          <h2>The JSON is the preview.<br>The working monitor is XPF.</h2>
+        </div>
+        <div class="product-copy">
+          <p>Load complete maps, connect over Modbus RTU or TCP, trend live values, build HMI dashboards, and export results without re-entering every register.</p>
+          <a class="button button-primary" href="https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=site-bottom">Download Modbus Monitor XPF</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Maintained by Quantum Bit Solutions. Manufacturer names and trademarks belong to their respective owners.</p>
+      <div><a href="DISCLAIMER.md">Safety disclaimer</a><a href="DATA_LICENSE.md">Data terms</a><a href="https://github.com/Modbus-Monitor/modbus-device-maps/issues">Corrections</a></div>
+    </footer>
+  </body>
+</html>

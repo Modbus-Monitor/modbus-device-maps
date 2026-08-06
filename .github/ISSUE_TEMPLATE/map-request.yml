@@ -1,0 +1,40 @@
+name: Request a device map
+description: Suggest a manufacturer and model for a future public preview or XPF map.
+title: "[Map request]: "
+labels: ["map-request"]
+body:
+  - type: input
+    id: manufacturer
+    attributes:
+      label: Manufacturer
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Exact model or model family
+    validations:
+      required: true
+  - type: input
+    id: manual
+    attributes:
+      label: Public manufacturer manual URL
+      description: Do not upload confidential or restricted documents.
+    validations:
+      required: false
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Signals and use case
+      description: Which registers are most important and how will the device be used?
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched the catalog and existing issues first.
+          required: true
+        - label: I am not submitting confidential or restricted material.
+          required: true

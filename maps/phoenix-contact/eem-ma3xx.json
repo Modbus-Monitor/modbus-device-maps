@@ -1,0 +1,115 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "phoenix-contact/eem-ma3xx",
+  "manufacturer": "Phoenix Contact",
+  "manufacturer_slug": "phoenix-contact",
+  "model": "EEM-MA3xx",
+  "slug": "eem-ma3xx",
+  "title": "Phoenix Contact EEM-MA3xx Modbus Register Map",
+  "description": "Phoenix Contact EEM-MA3xx Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Power",
+    "Energy",
+    "Voltage",
+    "Current",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "U12 conductor voltage V",
+      "display_address": "450514",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "I1 current A",
+      "display_address": "450528",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Sum P total active power - W",
+      "display_address": "450536",
+      "data_type": "INT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Total active energy procurement system kWh",
+      "display_address": "450770",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "F frequency Hz",
+      "display_address": "450526",
+      "data_type": "UINT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Hour operating hours counter h",
+      "display_address": "450512",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "U23 conductor voltage V",
+      "display_address": "450516",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "U31 conductor voltage V",
+      "display_address": "450518",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "V1 conductor voltage to N V",
+      "display_address": "450520",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "V2 conductor voltage to N V",
+      "display_address": "450522",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "V3 conductor voltage to N V",
+      "display_address": "450524",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "I2 current A",
+      "display_address": "450530",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Current"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/phoenix-contact/eem-ma3xx/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=phoenix-contact/eem-ma3xx",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=phoenix-contact/eem-ma3xx"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

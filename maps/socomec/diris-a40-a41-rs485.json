@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "socomec/diris-a40-a41-rs485",
+  "manufacturer": "Socomec",
+  "manufacturer_slug": "socomec",
+  "model": "DIRIS A40 / A41 RS485",
+  "slug": "diris-a40-a41-rs485",
+  "title": "Socomec DIRIS A40 / A41 RS485 Modbus Register Map",
+  "description": "Socomec DIRIS A40 / A41 RS485 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Socomec DIRIS A40 / A41 RS485 Modbus register list, Socomec DIRIS A40 / A41 RS485 Modbus table.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Harmonics",
+    "Power",
+    "Voltage",
+    "Current",
+    "Temperature",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Phase to phase voltage u12 V",
+      "display_address": "410513",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Phase current 1",
+      "display_address": "410527",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "active power kW",
+      "display_address": "410535",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Active energy",
+      "display_address": "410769",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency Hz",
+      "display_address": "410525",
+      "data_type": "UINT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Internal temperature sensor present",
+      "display_address": "411455",
+      "data_type": "UINT16",
+      "unit": "degC",
+      "category": "Temperature"
+    },
+    {
+      "name": "Thd u12",
+      "display_address": "411535",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "Hour meter 1",
+      "display_address": "410511",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Phase to phase voltage u23 V",
+      "display_address": "410515",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Phase to phase voltage u31 V",
+      "display_address": "410517",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Phase to neutral voltage phase 1 V",
+      "display_address": "410519",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Phase to neutral voltage phase 2 V",
+      "display_address": "410521",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/socomec/diris-a40-a41-rs485/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/diris-a40-a41-rs485",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/diris-a40-a41-rs485"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

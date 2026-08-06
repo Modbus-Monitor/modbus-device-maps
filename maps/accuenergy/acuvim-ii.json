@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "accuenergy/acuvim-ii",
+  "manufacturer": "Accuenergy",
+  "manufacturer_slug": "accuenergy",
+  "model": "Acuvim II",
+  "slug": "acuvim-ii",
+  "title": "Accuenergy Acuvim II Modbus Register Map",
+  "description": "Accuenergy Acuvim II Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Power",
+    "Energy",
+    "Current",
+    "Voltage",
+    "Harmonics",
+    "Status"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Voltage Input Wiring Type 0 3LN 1 1LN 2 2LL 3 3LL 4 1LL",
+      "display_address": "404100",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current Input Wiring Type 0 3CT 1 1CT 2 2CT",
+      "display_address": "404101",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Reactive Power Calculation Method 0 True Reactive Power 1 Generic Reactive Power",
+      "display_address": "404121",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "kWh Pulse Constant 1 60000",
+      "display_address": "404107",
+      "data_type": "UINT16",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency Selection 0 50Hz 1 60Hz",
+      "display_address": "404094",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "VAR PF Convention 0 IEC 1 IEEE",
+      "display_address": "404118",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Demand Interval 1 30",
+      "display_address": "404110",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Seal Status 0x0A Sealed Other Unsealed",
+      "display_address": "404128",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "THD V1 V12 THD Rx 100",
+      "display_address": "416475",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "Channel 1 Communication Protocol 0 Modbus 2 BACnet MS TP",
+      "display_address": "404095",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Channel 1 Parity 0 Even 1 Odd 2 None2 3 None1",
+      "display_address": "404096",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "kvarh Pulse Constant 1 60000",
+      "display_address": "404108",
+      "data_type": "UINT16",
+      "unit": "kWh",
+      "category": "Energy"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/accuenergy/acuvim-ii/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=accuenergy/acuvim-ii",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=accuenergy/acuvim-ii"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

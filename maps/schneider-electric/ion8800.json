@@ -1,0 +1,115 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "schneider-electric/ion8800",
+  "manufacturer": "Schneider Electric",
+  "manufacturer_slug": "schneider-electric",
+  "model": "ION8800",
+  "slug": "ion8800",
+  "title": "Schneider Electric ION8800 Modbus Register Map",
+  "description": "Schneider Electric ION8800 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Power",
+    "Power Factor",
+    "Energy",
+    "Current",
+    "Demand"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Uln 1 VoltsAmpsFreq",
+      "display_address": "400010",
+      "data_type": "UINT16",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "kW 1 PowerPF kW",
+      "display_address": "400026",
+      "data_type": "INT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "kWh del EnergyTHD kWh",
+      "display_address": "400090",
+      "data_type": "INT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "I 1 Ampfrequnbal",
+      "display_address": "400149",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Ull avg mx MinMaxDemand",
+      "display_address": "400058",
+      "data_type": "INT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Uln 1 Volts",
+      "display_address": "400165",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "PO U1-Flck N EN50160 Modbus 1",
+      "display_address": "400999",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Uln 2 VoltsAmpsFreq",
+      "display_address": "400011",
+      "data_type": "UINT16",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Uln 3 VoltsAmpsFreq",
+      "display_address": "400012",
+      "data_type": "UINT16",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Uln avg VoltsAmpsFreq",
+      "display_address": "400013",
+      "data_type": "UINT16",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Ull 12 VoltsAmpsFreq",
+      "display_address": "400014",
+      "data_type": "UINT16",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Ull 23 VoltsAmpsFreq",
+      "display_address": "400015",
+      "data_type": "UINT16",
+      "unit": "A",
+      "category": "Current"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/schneider-electric/ion8800/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=schneider-electric/ion8800",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=schneider-electric/ion8800"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}
