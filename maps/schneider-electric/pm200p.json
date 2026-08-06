@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "schneider-electric/pm200p",
+  "manufacturer": "Schneider Electric",
+  "manufacturer_slug": "schneider-electric",
+  "model": "PM200P",
+  "slug": "pm200p",
+  "title": "Schneider Electric PM200P Modbus Register Map",
+  "description": "Schneider Electric PM200P Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Power",
+    "Current",
+    "Voltage",
+    "Energy",
+    "Frequency",
+    "Demand"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Scale Factor V voltage",
+      "display_address": "404106",
+      "data_type": "INT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Scale Factor I current",
+      "display_address": "404105",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Scale Factor W power",
+      "display_address": "404107",
+      "data_type": "INT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Scale Factor E energy",
+      "display_address": "404108",
+      "data_type": "INT16",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Service Frequency",
+      "display_address": "404125",
+      "data_type": "INT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Thermal Demand Interval",
+      "display_address": "404117",
+      "data_type": "INT16",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Error Bitmap",
+      "display_address": "404112",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Serial Number",
+      "display_address": "407002",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Modbus Address",
+      "display_address": "407005",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Power Block Demand Interval",
+      "display_address": "404118",
+      "data_type": "INT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Power Block Demand Number of SubIntervals",
+      "display_address": "404119",
+      "data_type": "INT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Signed Real Energy Consumption",
+      "display_address": "401000",
+      "data_type": "FLOAT",
+      "unit": "kWh",
+      "category": "Energy"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/schneider-electric/pm200p/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=schneider-electric/pm200p",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=schneider-electric/pm200p"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

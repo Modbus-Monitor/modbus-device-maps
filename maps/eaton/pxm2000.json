@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "eaton/pxm2000",
+  "manufacturer": "Eaton",
+  "manufacturer_slug": "eaton",
+  "model": "PXM2000",
+  "slug": "pxm2000",
+  "title": "Eaton PXM2000 Modbus Register Map",
+  "description": "Eaton PXM2000 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Demand",
+    "Power",
+    "Harmonics",
+    "Power Factor",
+    "Energy",
+    "Current"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Nominal Voltage iDeviceVoltsRatingValue",
+      "display_address": "301356",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Output Current Rating iDeviceAmpsRatingValue",
+      "display_address": "301811",
+      "data_type": "UINT16",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Peak Demand In mDemandInPeakValue",
+      "display_address": "305263",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Forward Real Energy mForwardEnergyValue",
+      "display_address": "307005",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Nominal Frequency iNominalFrequencyValue",
+      "display_address": "301669",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "PF App Phase A mPFapparentAValue",
+      "display_address": "306213",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Demand Ia mDemandIaValue",
+      "display_address": "305251",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Status sStatusValue",
+      "display_address": "303001",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Percent THD Vab mVabPerTHDValue",
+      "display_address": "308149",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "Vendor Name VendorNameValue:32",
+      "display_address": "301033",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Device Type iDeviceTypeValue:32",
+      "display_address": "301129",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Percent Voltage unbalance Negative Sequence mPercentVoltageUnbalanceValue",
+      "display_address": "304484",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/eaton/pxm2000/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=eaton/pxm2000",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=eaton/pxm2000"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

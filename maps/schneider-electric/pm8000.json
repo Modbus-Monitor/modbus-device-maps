@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "schneider-electric/pm8000",
+  "manufacturer": "Schneider Electric",
+  "manufacturer_slug": "schneider-electric",
+  "model": "PM8000",
+  "slug": "pm8000",
+  "title": "Schneider Electric PM8000 Modbus Register Map",
+  "description": "Schneider Electric PM8000 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Power",
+    "Demand",
+    "Energy",
+    "Harmonics"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Voltage A B V",
+      "display_address": "403020",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current A A",
+      "display_address": "403000",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Active power A W",
+      "display_address": "403054",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Active energy delivered into load kWh",
+      "display_address": "402700",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency Hz",
+      "display_address": "403110",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Over Demand Act Pwr Last",
+      "display_address": "14320",
+      "data_type": "INT16",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Digital input status validity base unit",
+      "display_address": "402400",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Thd V1 10m mean",
+      "display_address": "440028",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "Meter name",
+      "display_address": "400030",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Year year",
+      "display_address": "401837",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Com1 baud rate",
+      "display_address": "454392",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Digital output status validity base unit",
+      "display_address": "402402",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/schneider-electric/pm8000/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=schneider-electric/pm8000",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=schneider-electric/pm8000"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

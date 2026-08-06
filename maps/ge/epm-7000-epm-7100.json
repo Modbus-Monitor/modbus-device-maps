@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "ge/epm-7000-epm-7100",
+  "manufacturer": "GE",
+  "manufacturer_slug": "ge",
+  "model": "EPM 7000 / EPM 7100",
+  "slug": "epm-7000-epm-7100",
+  "title": "GE EPM 7000 / EPM 7100 Modbus Register Map",
+  "description": "GE EPM 7000 / EPM 7100 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Demand",
+    "Current",
+    "Power Factor",
+    "Harmonics",
+    "Status",
+    "Voltage"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Phase A Voltage harmonic magnitudes",
+      "display_address": "406005",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Amps A",
+      "display_address": "400284",
+      "data_type": "UINT16",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Power Factor 3 Ph total",
+      "display_address": "400291",
+      "data_type": "INT16",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "Power Energy Format",
+      "display_address": "430005",
+      "data_type": "UINT16",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency",
+      "display_address": "400292",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Positive PF 3 Ph Average",
+      "display_address": "402015",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Volts A N previous Demand interval Short Term Minimum",
+      "display_address": "407975",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Meter Status",
+      "display_address": "404500",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Unit Lifetime Data Max Temperature",
+      "display_address": "404536",
+      "data_type": "FLOAT32",
+      "unit": "degC",
+      "category": "Temperature"
+    },
+    {
+      "name": "Volts A N THD",
+      "display_address": "405999",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "Meter Name:8",
+      "display_address": "400000",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Meter Type",
+      "display_address": "400016",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/ge/epm-7000-epm-7100/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=ge/epm-7000-epm-7100",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=ge/epm-7000-epm-7100"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

@@ -1,0 +1,113 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "socomec/countis-eci2",
+  "manufacturer": "Socomec",
+  "manufacturer_slug": "socomec",
+  "model": "Countis ECI2",
+  "slug": "countis-eci2",
+  "title": "Socomec Countis ECI2 Modbus Register Map",
+  "description": "Socomec Countis ECI2 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Socomec Countis ECI2 Modbus register list, Socomec Countis ECI2 Modbus table.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Current",
+    "Frequency",
+    "Status"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Date & Time Current s",
+      "display_address": "437120",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Custom Meter Frequency",
+      "display_address": "439698",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Status",
+      "display_address": "440981",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Label of custom unit :2",
+      "display_address": "437072",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Name :5",
+      "display_address": "440192",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Address",
+      "display_address": "440448",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Custom Meter Frequency",
+      "display_address": "439725",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Custom Meter Frequency",
+      "display_address": "439752",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Custom Meter Frequency",
+      "display_address": "439779",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Custom Meter Frequency",
+      "display_address": "439806",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Custom Meter Frequency",
+      "display_address": "439833",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Custom Meter Frequency",
+      "display_address": "439860",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/socomec/countis-eci2/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/countis-eci2",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/countis-eci2"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

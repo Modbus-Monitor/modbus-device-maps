@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "solaredge/se12-5k",
+  "manufacturer": "SolarEdge",
+  "manufacturer_slug": "solaredge",
+  "model": "SE12.5K",
+  "slug": "se12-5k",
+  "title": "SolarEdge SE12.5K Modbus Register Map",
+  "description": "SolarEdge SE12.5K Modbus map and register map with sample Modbus registers, register addresses, and solar inverter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Solar Inverter",
+  "protocol": "Modbus",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Power",
+    "Power Factor",
+    "Status",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "I AC VoltageAB",
+      "display_address": "440077",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "I AC Current",
+      "display_address": "440072",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "I AC Power",
+      "display_address": "440084",
+      "data_type": "INT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "I AC Energy WH",
+      "display_address": "440094",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "I AC Frequency",
+      "display_address": "440086",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "I AC PF1",
+      "display_address": "440092",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "I Status",
+      "display_address": "440108",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "I AC VA",
+      "display_address": "440088",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "I AC CurrentA",
+      "display_address": "440073",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "I AC CurrentB",
+      "display_address": "440074",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "I AC CurrentC",
+      "display_address": "440075",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "I AC Current SF",
+      "display_address": "440076",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Current"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/solaredge/se12-5k/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=solaredge/se12-5k",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=solaredge/se12-5k"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

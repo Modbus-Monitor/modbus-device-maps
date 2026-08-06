@@ -1,0 +1,113 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "socomec/diris-u10",
+  "manufacturer": "Socomec",
+  "manufacturer_slug": "socomec",
+  "model": "DIRIS U10",
+  "slug": "diris-u10",
+  "title": "Socomec DIRIS U10 Modbus Register Map",
+  "description": "Socomec DIRIS U10 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Socomec DIRIS U10 Modbus register list, Socomec DIRIS U10 Modbus table.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Status",
+    "Voltage",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Ph N Voltage V1 V",
+      "display_address": "436869",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Frequency mHz",
+      "display_address": "436867",
+      "data_type": "UINT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Status",
+      "display_address": "438497",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "SOCO :4",
+      "display_address": "450000",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "MODBUS Table Version",
+      "display_address": "450006",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Ph N Voltage V2 V",
+      "display_address": "436871",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Ph N Voltage V3 V",
+      "display_address": "436873",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Ph Ph Voltage U12 V",
+      "display_address": "436875",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Ph Ph Voltage U23 V",
+      "display_address": "436877",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Ph Ph Voltage U31 V",
+      "display_address": "436879",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "F Hz",
+      "display_address": "400260",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Frequency"
+    },
+    {
+      "name": "F Hz",
+      "display_address": "400388",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Frequency"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/socomec/diris-u10/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/diris-u10",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/diris-u10"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

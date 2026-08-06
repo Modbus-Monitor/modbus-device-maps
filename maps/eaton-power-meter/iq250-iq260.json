@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "eaton-power-meter/iq250-iq260",
+  "manufacturer": "Eaton Power Meter",
+  "manufacturer_slug": "eaton-power-meter",
+  "model": "IQ250, IQ260",
+  "slug": "iq250-iq260",
+  "title": "Eaton Power Meter IQ250, IQ260 Modbus Register Map",
+  "description": "Eaton Power Meter IQ250, IQ260 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Energy",
+    "Current",
+    "Demand",
+    "Power Factor",
+    "Power",
+    "Status"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Phase A Voltage harmonic magnitudes 0 01",
+      "display_address": "406005",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Amps A amps",
+      "display_address": "400284",
+      "data_type": "UINT16",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Power Factor 3 Ph total",
+      "display_address": "400291",
+      "data_type": "INT16",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "W hours Received Wh per energy format",
+      "display_address": "401499",
+      "data_type": "INT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency Hz",
+      "display_address": "401025",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Positive PF 3 Ph Average",
+      "display_address": "402015",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Volts A N previous Demand interval Short TermMinimum volts",
+      "display_address": "407975",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Meter Status mmmpch tffeeccc",
+      "display_address": "404500",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Volts A N THD 0 01",
+      "display_address": "405999",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "Meter Name :8",
+      "display_address": "400000",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Meter Type st vvv",
+      "display_address": "400016",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Port ID",
+      "display_address": "404499",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Communication"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/eaton-power-meter/iq250-iq260/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=eaton-power-meter/iq250-iq260",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=eaton-power-meter/iq250-iq260"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

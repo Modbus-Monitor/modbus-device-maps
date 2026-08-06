@@ -1,0 +1,115 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "sel/sel-735",
+  "manufacturer": "SEL",
+  "manufacturer_slug": "sel",
+  "model": "SEL-735",
+  "slug": "sel-735",
+  "title": "SEL SEL-735 Modbus Register Map",
+  "description": "SEL SEL-735 Modbus map and register map with sample Modbus registers, register addresses, and power quality and revenue meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Quality and Revenue Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Demand",
+    "Frequency",
+    "Power"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "VA RMS VOLTAGE VA",
+      "display_address": "400358",
+      "data_type": "INT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "IA RMS CURRENT IA",
+      "display_address": "400350",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "PFD3 DISPLACEMENT POWER FACTOR 3 PHASE",
+      "display_address": "400910",
+      "data_type": "INT16",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "FREQ FREQUENCY (HZ)",
+      "display_address": "400900",
+      "data_type": "UINT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "WP3_DEL WATT PEAK DEMAND 3 PHASE DELIVERED",
+      "display_address": "400500",
+      "data_type": "INT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "W3 WATTS 3 PHASE",
+      "display_address": "400370",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "IB RMS CURRENT IB",
+      "display_address": "400352",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "IC RMS CURRENT IC",
+      "display_address": "400354",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "IN RMS CURRENT IN",
+      "display_address": "400356",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "VB RMS VOLTAGE VB",
+      "display_address": "400362",
+      "data_type": "INT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "VC RMS VOLTAGE VC",
+      "display_address": "400360",
+      "data_type": "INT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "VAB RMS VOLTAGE VAB",
+      "display_address": "400364",
+      "data_type": "INT32",
+      "unit": "V",
+      "category": "Voltage"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/sel/sel-735/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=sel/sel-735",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=sel/sel-735"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

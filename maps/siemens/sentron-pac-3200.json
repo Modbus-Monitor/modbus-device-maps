@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "siemens/sentron-pac-3200",
+  "manufacturer": "Siemens",
+  "manufacturer_slug": "siemens",
+  "model": "PAC3200",
+  "slug": "sentron-pac-3200",
+  "title": "Siemens PAC3200 Modbus Register Map",
+  "description": "Siemens PAC3200 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Power",
+    "Voltage",
+    "Current",
+    "Status",
+    "Demand",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Voltage Va n",
+      "display_address": "400001",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current a",
+      "display_address": "400013",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Apparent Power a",
+      "display_address": "400019",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Energy pulse mode",
+      "display_address": "450041",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency",
+      "display_address": "400055",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Demand Period",
+      "display_address": "400517",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Device Diagnostics and Device Status",
+      "display_address": "400205",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Limit Violations",
+      "display_address": "400203",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "IP address",
+      "display_address": "463001",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Bootloader version",
+      "display_address": "463007",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Voltage Vb n",
+      "display_address": "400003",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Voltage Vc n",
+      "display_address": "400005",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/siemens/sentron-pac-3200/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=siemens/sentron-pac-3200",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=siemens/sentron-pac-3200"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

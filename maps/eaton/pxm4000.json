@@ -1,0 +1,115 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "eaton/pxm4000",
+  "manufacturer": "Eaton",
+  "manufacturer_slug": "eaton",
+  "model": "PXM4000",
+  "slug": "pxm4000",
+  "title": "Eaton PXM4000 Modbus Register Map",
+  "description": "Eaton PXM4000 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Demand",
+    "Power Factor",
+    "Status",
+    "Energy",
+    "Current"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "DemandAmpsAvg",
+      "display_address": "414112",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "ForwardEnergy",
+      "display_address": "406305",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "PFdisplacementTotal",
+      "display_address": "404657",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "DemandForwardWatts",
+      "display_address": "414114",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "SecondaryStatus",
+      "display_address": "404609",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "ErrCode",
+      "display_address": "404610",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Status",
+      "display_address": "404609",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "PFapparentTotal",
+      "display_address": "404659",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "PFdisplacementA",
+      "display_address": "404685",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "PFdisplacementB",
+      "display_address": "404687",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "PFdisplacementC",
+      "display_address": "404689",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "PFapparentA",
+      "display_address": "404691",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/eaton/pxm4000/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=eaton/pxm4000",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=eaton/pxm4000"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

@@ -1,0 +1,115 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "janitza/b21-b23-b24",
+  "manufacturer": "Janitza",
+  "manufacturer_slug": "janitza",
+  "model": "B21,B23,B24",
+  "slug": "b21-b23-b24",
+  "title": "Janitza B21,B23,B24 Modbus Register Map",
+  "description": "Janitza B21,B23,B24 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Janitza B21,B23,B24 Modbus register, Janitza B21,B23,B24 Modbus address list.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Harmonics",
+    "Power Factor",
+    "Power",
+    "Temperature",
+    "Status"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "RD_WR_S0_POWER_AVG_0",
+      "display_address": "404543",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "PFLN_0",
+      "display_address": "403893",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "RD_WR_MB_STATUS",
+      "display_address": "313396",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "TEMPERATUR",
+      "display_address": "404209",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Temperature"
+    },
+    {
+      "name": "G_THD_ULN_0",
+      "display_address": "319110",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "G_ULN_0",
+      "display_address": "319000",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "RD_WR_BAUD485",
+      "display_address": "306864",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "RD_WR_SET_BACNAME_INSTACE",
+      "display_address": "312582",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "G_THD_ULN_1",
+      "display_address": "319112",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "G_THD_ULN_2",
+      "display_address": "319114",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "G_THD_ILN_0",
+      "display_address": "319116",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "G_THD_ILN_1",
+      "display_address": "319118",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Harmonics"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/janitza/b21-b23-b24/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=janitza/b21-b23-b24",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=janitza/b21-b23-b24"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

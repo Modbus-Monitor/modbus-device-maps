@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "title": "Modbus Monitor public device-map preview",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "manufacturer",
+    "model",
+    "device_type",
+    "address_display_convention",
+    "registers",
+    "documentation_url",
+    "product"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+/[a-z0-9-]+$" },
+    "manufacturer": { "type": "string", "minLength": 1 },
+    "model": { "type": "string", "minLength": 1 },
+    "device_type": { "type": "string", "minLength": 1 },
+    "address_display_convention": { "type": "string", "minLength": 40 },
+    "documentation_url": { "type": "string", "format": "uri" },
+    "register_count": { "type": "integer", "minimum": 1 },
+    "registers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "display_address", "data_type", "unit", "category"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "display_address": { "type": "string", "minLength": 1 },
+          "data_type": { "type": "string", "minLength": 1 },
+          "unit": { "type": "string" },
+          "category": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "product": {
+      "type": "object",
+      "required": ["name", "full_map_url"],
+      "properties": {
+        "name": { "type": "string" },
+        "full_map_url": { "type": "string", "format": "uri" },
+        "tester_url": { "type": "string", "format": "uri" }
+      }
+    }
+  }
+}

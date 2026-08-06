@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "socomec/diris-a20-modbus",
+  "manufacturer": "Socomec",
+  "manufacturer_slug": "socomec",
+  "model": "DIRIS A20 modbus",
+  "slug": "diris-a20-modbus",
+  "title": "Socomec DIRIS A20 modbus Modbus Register Map",
+  "description": "Socomec DIRIS A20 modbus Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Socomec DIRIS A20 modbus Modbus register list, Socomec DIRIS A20 modbus Modbus table.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Power",
+    "Current",
+    "Voltage",
+    "Energy",
+    "Status",
+    "Harmonics"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Hour meter allocation1 Auxiliary power supply 2 Currents3 phase to phase voltage 4 Input 1 5 Input2 6 Input3",
+      "display_address": "436361",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current Transformer secondary",
+      "display_address": "457345",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Reactive Power Calculation",
+      "display_address": "436369",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "OUT pulse output value 0 0 1 kWh kvarh1 1 kWh kvarh2 10 kWh kvarh3 100 kWh kvarh4 1000 kWh kvarh5 10000 kWh kvarh",
+      "display_address": "436359",
+      "data_type": "UINT16",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency F Hz",
+      "display_address": "450526",
+      "data_type": "UINT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Alarm Type 1 I2 In3 U4 V5 PP6 QP7 SP8 PFC9 PFL10 THDU11 THDV12 THDI13 HOUR14 F",
+      "display_address": "436363",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Alarm Specified time 1 999 s",
+      "display_address": "436364",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "thd U12",
+      "display_address": "451536",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "SOCO :4",
+      "display_address": "450000",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "JBUS Table Version EX 101 Version 1 01",
+      "display_address": "450006",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Product option code bit field bit 1 Metering Optionbit 2 Communication optionbit 3 3 inputs 1 output option",
+      "display_address": "436096",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Current Transformer primary A",
+      "display_address": "457346",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/socomec/diris-a20-modbus/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/diris-a20-modbus",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/diris-a20-modbus"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

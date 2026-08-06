@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "sma/solar-inverter",
+  "manufacturer": "SMA",
+  "manufacturer_slug": "sma",
+  "model": "Solar Inverter",
+  "slug": "solar-inverter",
+  "title": "SMA Solar Inverter Modbus Register Map",
+  "description": "SMA Solar Inverter Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Power",
+    "Voltage",
+    "Current",
+    "Frequency",
+    "Power Factor",
+    "Temperature"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Grid voltage phase L1 Metering GridMs PhV phsA V",
+      "display_address": "431252",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current charging power CmpBMS GetBatChaWh Wh",
+      "display_address": "432200",
+      "data_type": "INT64U",
+      "unit": "kWh",
+      "category": "Current"
+    },
+    {
+      "name": "External active power setpoint specification fallback value for active power setpoint specification Inverter WModCfg WCtlComCfg FlbWSpt W",
+      "display_address": "441214",
+      "data_type": "INT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Charge energy CmpBMS BatChaWh Wh",
+      "display_address": "441362",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Grid frequency Metering GridMs Hz Hz",
+      "display_address": "431446",
+      "data_type": "UINT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Nominal cos phi PFMinQ1 Inverter PFMinQ1 0 to 1",
+      "display_address": "444408",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Operating mode of multifunction relay MltFncSw OpMode 258 Switching status grid relay GriSwCpy",
+      "display_address": "440574",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Ambient temperature Env TmpVal degC",
+      "display_address": "434608",
+      "data_type": "INT32",
+      "unit": "degC",
+      "category": "Temperature"
+    },
+    {
+      "name": "Control of battery charging via communication available Bat ChaCtlComAval 1129 Yes Yes",
+      "display_address": "431060",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Battery charge BatChrg BatChrg Wh",
+      "display_address": "431396",
+      "data_type": "INT64U",
+      "unit": "kWh",
+      "category": "General"
+    },
+    {
+      "name": "Standard Daylight saving time conversion on DtTm DlSvIsOn 1129 Yes Yes",
+      "display_address": "440004",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Discharge energy CmpBMS BatDschWh Wh",
+      "display_address": "441364",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/sma/solar-inverter/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=sma/solar-inverter",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=sma/solar-inverter"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

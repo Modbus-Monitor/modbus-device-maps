@@ -1,0 +1,111 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "schneider-electric/em4800",
+  "manufacturer": "Schneider Electric",
+  "manufacturer_slug": "schneider-electric",
+  "model": "EM4800",
+  "slug": "em4800",
+  "title": "Schneider Electric EM4800 Modbus Register Map",
+  "description": "Schneider Electric EM4800 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Power Factor"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Meter 1 pf",
+      "display_address": "400900",
+      "data_type": "FLOAT",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Meter 1 Wh delivered",
+      "display_address": "400000",
+      "data_type": "INT32",
+      "unit": "kWh",
+      "category": "General"
+    },
+    {
+      "name": "Model",
+      "display_address": "402600",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Meter 2 pf",
+      "display_address": "400902",
+      "data_type": "FLOAT",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Meter 3 pf",
+      "display_address": "400904",
+      "data_type": "FLOAT",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Meter 4 pf",
+      "display_address": "400906",
+      "data_type": "FLOAT",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Meter 5 pf",
+      "display_address": "400908",
+      "data_type": "FLOAT",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Meter 6 pf",
+      "display_address": "400910",
+      "data_type": "FLOAT",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Meter 7 pf",
+      "display_address": "400912",
+      "data_type": "FLOAT",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Meter 8 pf",
+      "display_address": "400914",
+      "data_type": "FLOAT",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Meter 9 pf",
+      "display_address": "400916",
+      "data_type": "FLOAT",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Meter 10 pf",
+      "display_address": "400918",
+      "data_type": "FLOAT",
+      "unit": "-",
+      "category": "Power Factor"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/schneider-electric/em4800/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=schneider-electric/em4800",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=schneider-electric/em4800"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

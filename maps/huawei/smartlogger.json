@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "huawei/smartlogger",
+  "manufacturer": "Huawei",
+  "manufacturer_slug": "huawei",
+  "model": "SmartLogger",
+  "slug": "smartlogger",
+  "title": "Huawei SmartLogger Modbus Register Map",
+  "description": "Huawei SmartLogger Modbus map and register map with sample Modbus registers, register addresses, and solar inverter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Huawei SmartLogger Modbus TCP register, Huawei SmartLogger Modbus register map.",
+  "device_type": "Solar Inverter",
+  "protocol": "Modbus",
+  "categories": [
+    "Power",
+    "Status",
+    "Current",
+    "Energy",
+    "Voltage",
+    "Temperature"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Grid A phase voltage",
+      "display_address": "432260",
+      "data_type": "INT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Grid A phase current",
+      "display_address": "432272",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Grid-tied Active Power",
+      "display_address": "432278",
+      "data_type": "INT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Energy Yield Daily",
+      "display_address": "440562",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "ESS Battery Status",
+      "display_address": "437000",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Battery1 Inv3 Temperature",
+      "display_address": "437022",
+      "data_type": "UINT16",
+      "unit": "degC",
+      "category": "Temperature"
+    },
+    {
+      "name": "Solar Producion Now",
+      "display_address": "440521",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Conversion coefficient",
+      "display_address": "441940",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Communication abnormal shutdown",
+      "display_address": "441947",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Battery Inv3 Charge/Discharge Power",
+      "display_address": "437765",
+      "data_type": "INT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Grid B Phase current",
+      "display_address": "432274",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Grid C Phase Current",
+      "display_address": "432276",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "Current"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/huawei/smartlogger/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=huawei/smartlogger",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=huawei/smartlogger"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "fronius/primo-5",
+  "manufacturer": "Fronius",
+  "manufacturer_slug": "fronius",
+  "model": "Primo 5",
+  "slug": "primo-5",
+  "title": "Fronius Primo 5 Modbus Register Map",
+  "description": "Fronius Primo 5 Modbus map and register map with sample Modbus registers, register addresses, and solar inverter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Fronius Primo 5 Modbus registers, Fronius Primo 5 Modbus TCP.",
+  "device_type": "Solar Inverter",
+  "protocol": "Modbus",
+  "categories": [
+    "Power",
+    "Voltage",
+    "Current",
+    "Energy",
+    "Status",
+    "Temperature"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Phase Voltage AB V",
+      "display_address": "440077",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "AC Current A",
+      "display_address": "440069",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "AC Power W",
+      "display_address": "440089",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "AC Energy Wh",
+      "display_address": "440099",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Line Frequency Hz",
+      "display_address": "440091",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Enumerated value Operating state",
+      "display_address": "440115",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Cabinet Temperature C",
+      "display_address": "440107",
+      "data_type": "FLOAT32",
+      "unit": "degC",
+      "category": "Temperature"
+    },
+    {
+      "name": "Bitmask value Event fields",
+      "display_address": "440117",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Phase A Current A",
+      "display_address": "440071",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Phase B Current A",
+      "display_address": "440073",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Phase C Current A",
+      "display_address": "440075",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Phase Voltage BC V",
+      "display_address": "440079",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/fronius/primo-5/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=fronius/primo-5",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=fronius/primo-5"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "socomec/diris-d30-d50-d70",
+  "manufacturer": "Socomec",
+  "manufacturer_slug": "socomec",
+  "model": "DIRIS,D30,D50,D70 _",
+  "slug": "diris-d30-d50-d70",
+  "title": "Socomec DIRIS,D30,D50,D70 _ Modbus Register Map",
+  "description": "Socomec DIRIS,D30,D50,D70 _ Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Socomec DIRIS,D30,D50,D70 _ Modbus register list, Socomec DIRIS,D30,D50,D70 _ Modbus table.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Energy",
+    "Voltage",
+    "Current",
+    "Power",
+    "Status",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Inst Measurement Load 1 Ph N voltage V1 V",
+      "display_address": "418444",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Inst Measurement Load 1 Current I1 A",
+      "display_address": "418458",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Inst Measurement Load 1 Total active power W",
+      "display_address": "418476",
+      "data_type": "INT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Energy measurement Load 1 Total positive active energy ea Wh",
+      "display_address": "419841",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Inst Measurement Load 1 Frequency Hz",
+      "display_address": "418442",
+      "data_type": "UINT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Acknowledgment of alarms Ack id",
+      "display_address": "439616",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Inst Measurement Load 1 Date of last instance s",
+      "display_address": "418433",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Inst Measurement Load 1 Ph N voltage V2 V",
+      "display_address": "418446",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Inst Measurement Load 1 Ph N voltage V3 V",
+      "display_address": "418448",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Inst Measurement Load 1 Ph ph voltage U12 V",
+      "display_address": "418452",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Inst Measurement Load 1 Ph ph voltage U23 V",
+      "display_address": "418454",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Inst Measurement Load 1 Ph ph voltage U31 V",
+      "display_address": "418456",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/socomec/diris-d30-d50-d70/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/diris-d30-d50-d70",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/diris-d30-d50-d70"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

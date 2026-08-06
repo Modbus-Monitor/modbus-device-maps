@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "eaton/93pm",
+  "manufacturer": "Eaton",
+  "manufacturer_slug": "eaton",
+  "model": "93PM",
+  "slug": "93pm",
+  "title": "Eaton 93PM Modbus Register Map",
+  "description": "Eaton 93PM Modbus map and register map with sample Modbus registers, register addresses, and ups overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "UPS",
+  "protocol": "Modbus",
+  "categories": [
+    "Current",
+    "Voltage",
+    "Status",
+    "Power Factor",
+    "Frequency",
+    "Energy"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Nominal Input Voltage (L-L) iDeviceVoltsInRating",
+      "display_address": "401358",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Output Current Rating iDeviceAmpsRating",
+      "display_address": "401811",
+      "data_type": "UINT16",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Load Power Off sLoadPowerOff",
+      "display_address": "417028",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Output KW Hours mOutputKWHour",
+      "display_address": "407003",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Nominal Input Frequency iNominalInputFrequency",
+      "display_address": "401670",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Output PF mPFdispOut",
+      "display_address": "406203",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Status sStatus",
+      "display_address": "403001",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Ambient Temperature mTempAmbient",
+      "display_address": "412001",
+      "data_type": "FLOAT32",
+      "unit": "degC",
+      "category": "Temperature"
+    },
+    {
+      "name": "Vendor Name VendorName:32",
+      "display_address": "401033",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Device Type iDeviceType:32",
+      "display_address": "401129",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Common Battery sCommonBattery",
+      "display_address": "417017",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Nominal Output Voltage (L-L) iDeviceVoltsOutRating",
+      "display_address": "401360",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/eaton/93pm/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=eaton/93pm",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=eaton/93pm"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

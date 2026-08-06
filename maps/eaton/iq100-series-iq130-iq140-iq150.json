@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.0.0",
+  "id": "eaton/iq100-series-iq130-iq140-iq150",
+  "manufacturer": "Eaton",
+  "manufacturer_slug": "eaton",
+  "model": "IQ100 series,IQ130,IQ140,IQ150",
+  "slug": "iq100-series-iq130-iq140-iq150",
+  "title": "Eaton IQ100 series,IQ130,IQ140,IQ150 Modbus Register Map",
+  "description": "Eaton IQ100 series,IQ130,IQ140,IQ150 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus",
+  "categories": [
+    "Current",
+    "Energy",
+    "Demand",
+    "Frequency",
+    "Power",
+    "Power Factor"
+  ],
+  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "registers": [
+    {
+      "name": "Amps A amps",
+      "display_address": "401011",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Positive Power Factor 3 Ph Maximum Avg Demand none",
+      "display_address": "403127",
+      "data_type": "FLOAT32",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "Power Energy Format pppp nn eee ddd",
+      "display_address": "430005",
+      "data_type": "UINT16",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency Hz",
+      "display_address": "401025",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Positive pf 3 ph average -100 to 100",
+      "display_address": "402015",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Positive Watts 3 Ph Maximum Avg Demand watts",
+      "display_address": "403117",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Meter status bit-mapped",
+      "display_address": "404999",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Meter Serial Number:8",
+      "display_address": "400008",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Meter type bit-mapped",
+      "display_address": "400016",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Amps B amps",
+      "display_address": "401013",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Amps C amps",
+      "display_address": "401015",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Neutral current amps",
+      "display_address": "401027",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    }
+  ],
+  "register_count": 12,
+  "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/eaton/iq100-series-iq130-iq140-iq150/",
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=eaton/iq100-series-iq130-iq140-iq150",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=eaton/iq100-series-iq130-iq140-iq150"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}
