@@ -31,7 +31,7 @@ jobs:
         shell: bash
         run: |
           mkdir _site
-          cp index.html catalog.json robots.txt sitemap.xml .nojekyll DISCLAIMER.md DATA_LICENSE.md google08d7bd0a4e17da63.html _site/
+          cp index.html catalog.json robots.txt sitemap.xml .nojekyll DISCLAIMER.md DATA_LICENSE.md google08d7bd0a4e17da63.html BingSiteAuth.xml _site/
           cp -R assets data maps pages schemas _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
