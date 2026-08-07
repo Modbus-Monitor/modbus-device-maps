@@ -1,0 +1,117 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "satec/powermeters",
+  "manufacturer": "SATEC",
+  "manufacturer_slug": "satec",
+  "model": "Powermeters",
+  "slug": "powermeters",
+  "title": "SATEC Powermeters Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the SATEC Powermeters power meter, with 12 representative power, voltage, current signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Power",
+    "Voltage",
+    "Current",
+    "Energy",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Voltage l1l12 V",
+      "display_address": "400256",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current l1 A",
+      "display_address": "400259",
+      "data_type": "UINT16",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Kw l1 kW",
+      "display_address": "400262",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Power"
+    },
+    {
+      "name": "Kwh import low kWh",
+      "display_address": "400287",
+      "data_type": "UINT16",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency Hz",
+      "display_address": "400279",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Voltage l2l23 V",
+      "display_address": "400257",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Voltage l3l31 V",
+      "display_address": "400258",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current l2 A",
+      "display_address": "400260",
+      "data_type": "UINT16",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Current l3 A",
+      "display_address": "400261",
+      "data_type": "UINT16",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Kw l2 kW",
+      "display_address": "400263",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Power"
+    },
+    {
+      "name": "Kw l3 kW",
+      "display_address": "400264",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Power"
+    },
+    {
+      "name": "Kvar l1 kvar",
+      "display_address": "400265",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Power"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=satec/powermeters",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=satec/powermeters",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

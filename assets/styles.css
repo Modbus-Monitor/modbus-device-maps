@@ -95,6 +95,22 @@ h2 { font-size: clamp(2.1rem, 4.3vw, 3.65rem); }
 footer { min-height: 110px; display: flex; justify-content: space-between; align-items: center; gap: 2rem; border-top: 1px solid var(--line); color: #829ba4; font-size: .76rem; }
 footer div { display: flex; gap: 1rem; }
 
+.guide-badge { align-self: center; border: 1px solid #8193a1; border-radius: 999px; color: #c7d1d8; font-size: .78rem; line-height: 1; padding: .4rem .55rem; text-align: center; white-space: nowrap; }
+.detail-page { margin: 0 auto; max-width: 1040px; padding: 4.5rem 1.5rem 5rem; }
+.detail-page h1 { font-size: clamp(2.2rem, 5vw, 4.5rem); line-height: 1.05; max-width: 980px; }
+.detail-page h2 { margin-top: 3rem; }
+.detail-lede { color: var(--muted); font-size: 1.16rem; line-height: 1.7; max-width: 760px; }
+.detail-meta, .detail-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.5rem 0; }
+.detail-meta span { background: #102b3a; border: 1px solid #315064; border-radius: 999px; color: #d4e4ec; font-size: .85rem; padding: .45rem .75rem; }
+.detail-actions { align-items: center; }
+.text-link { color: #9ee7d5; font-weight: 700; }
+.table-wrap { overflow-x: auto; border: 1px solid #315064; border-radius: 12px; }
+.table-wrap table { border-collapse: collapse; min-width: 700px; width: 100%; }
+.table-wrap th, .table-wrap td { border-bottom: 1px solid #254452; padding: .8rem; text-align: left; }
+.table-wrap th { background: #102b3a; color: #d4e4ec; }
+.table-wrap tr:last-child td { border-bottom: 0; }
+.detail-cta { background: #0e2d3d; border: 1px solid #315064; border-radius: 16px; margin-top: 3rem; padding: 1.5rem; }
+
 @media (max-width: 960px) {
   .hero { grid-template-columns: 1fr; padding: 4rem 0; }
   .signal-panel { max-width: 650px; }

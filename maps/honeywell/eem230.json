@@ -1,0 +1,117 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "honeywell/eem230",
+  "manufacturer": "Honeywell",
+  "manufacturer_slug": "honeywell",
+  "model": "EEM230",
+  "slug": "eem230",
+  "title": "Honeywell EEM230 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Honeywell EEM230 power meter, with 12 representative power, energy, voltage signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Power",
+    "Energy",
+    "Voltage",
+    "Current",
+    "Status"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Urms effective voltage",
+      "display_address": "400035",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Irms effective current",
+      "display_address": "400036",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Prms effective active power",
+      "display_address": "400037",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "WT1 total counter energy total tariff 1",
+      "display_address": "400027",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Status protect",
+      "display_address": "400021",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Number of supported registers",
+      "display_address": "400001",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Hw vers Modif",
+      "display_address": "400014",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Serial number low",
+      "display_address": "400015",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "WT1 partial counter energy partial tariff 1",
+      "display_address": "400029",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Qrms effective reactive power",
+      "display_address": "400038",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Number of supported flags",
+      "display_address": "400002",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Baud rate",
+      "display_address": "400003",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Communication"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=honeywell/eem230",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=honeywell/eem230",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

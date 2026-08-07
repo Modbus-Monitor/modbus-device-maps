@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "northern-design/pm390",
+  "manufacturer": "Northern Design",
+  "manufacturer_slug": "northern-design",
+  "model": "PM390",
+  "slug": "pm390",
+  "title": "Northern Design PM390 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Northern Design PM390 power meter, with 12 representative power, current, frequency signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Power",
+    "Current",
+    "Frequency",
+    "Power Factor"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Phase 1 amps Amps",
+      "display_address": "405388",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "kW 3-Ph kW",
+      "display_address": "405376",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power"
+    },
+    {
+      "name": "Frequency",
+      "display_address": "405384",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "PF 3-Ph",
+      "display_address": "405382",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Phase 1 volts Volts",
+      "display_address": "405386",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Export wh Wh",
+      "display_address": "405642",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Communication"
+    },
+    {
+      "name": "kVA 3-Ph kVA",
+      "display_address": "405378",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power"
+    },
+    {
+      "name": "Kvar 3-Ph kvar",
+      "display_address": "405380",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power"
+    },
+    {
+      "name": "Phase 1 kW kW",
+      "display_address": "405390",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power"
+    },
+    {
+      "name": "Phase 2 amps Amps",
+      "display_address": "405394",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Phase 2 kW kW",
+      "display_address": "405396",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power"
+    },
+    {
+      "name": "Phase 3 amps Amps",
+      "display_address": "405400",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=northern-design/pm390",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=northern-design/pm390",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

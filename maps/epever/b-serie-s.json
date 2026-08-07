@@ -1,0 +1,118 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "epever/b-serie-s",
+  "manufacturer": "Epever",
+  "manufacturer_slug": "epever",
+  "model": "B Serie s",
+  "slug": "b-serie-s",
+  "title": "Epever B Serie s Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Epever B Serie s power meter, with 12 representative voltage, current, power signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Power",
+    "Energy",
+    "Status",
+    "Temperature"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Array rated voltage V",
+      "display_address": "312288",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Array rated current A",
+      "display_address": "312289",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Array rated power W",
+      "display_address": "312290",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Consumed energy today",
+      "display_address": "313060",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Battery status",
+      "display_address": "312800",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Battery temperature C",
+      "display_address": "312560",
+      "data_type": "UINT16",
+      "unit": "degC",
+      "category": "Temperature"
+    },
+    {
+      "name": "Charging mode",
+      "display_address": "312296",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Battery rated voltage V",
+      "display_address": "312292",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Battery rated current A",
+      "display_address": "312293",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Battery rated power W",
+      "display_address": "312294",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Rated current of load W",
+      "display_address": "312302",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Pv array input voltage V",
+      "display_address": "312544",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=epever/b-serie-s",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=epever/b-serie-s",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

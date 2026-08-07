@@ -11,6 +11,7 @@
     "device_type",
     "address_display_convention",
     "registers",
+    "guide_status",
     "documentation_url",
     "product"
   ],
@@ -21,8 +22,9 @@
     "model": { "type": "string", "minLength": 1 },
     "device_type": { "type": "string", "minLength": 1 },
     "address_display_convention": { "type": "string", "minLength": 40 },
-    "documentation_url": { "type": "string", "format": "uri" },
-    "register_count": { "type": "integer", "minimum": 1 },
+    "guide_status": { "type": "string", "enum": ["published", "upcoming"] },
+    "documentation_url": { "type": ["string", "null"], "format": "uri" },
+    "register_count": { "type": "integer", "minimum": 6, "maximum": 12 },
     "registers": {
       "type": "array",
       "minItems": 1,

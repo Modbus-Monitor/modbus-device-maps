@@ -1,0 +1,115 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "kamstrup/multical",
+  "manufacturer": "Kamstrup",
+  "manufacturer_slug": "kamstrup",
+  "model": "Multical",
+  "slug": "multical",
+  "title": "Kamstrup Multical Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Kamstrup Multical power meter, with 12 representative temperature, power, energy signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Temperature",
+    "Power",
+    "Energy"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Actual power",
+      "display_address": "400012",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Heat energy E1",
+      "display_address": "400000",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Inlet temperature T1",
+      "display_address": "400016",
+      "data_type": "FLOAT32",
+      "unit": "degC",
+      "category": "Temperature"
+    },
+    {
+      "name": "Actual ow",
+      "display_address": "400004",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Version",
+      "display_address": "400084",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Outlet temperature T2",
+      "display_address": "400020",
+      "data_type": "FLOAT32",
+      "unit": "degC",
+      "category": "Temperature"
+    },
+    {
+      "name": "Heat energy E1",
+      "display_address": "400032",
+      "data_type": "UINT16",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Actual power",
+      "display_address": "400038",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Heat energy E1",
+      "display_address": "400040",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Actual power",
+      "display_address": "400052",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Inlet temperature T1",
+      "display_address": "400056",
+      "data_type": "UINT32",
+      "unit": "degC",
+      "category": "Temperature"
+    },
+    {
+      "name": "Outlet temperature T2",
+      "display_address": "400060",
+      "data_type": "UINT32",
+      "unit": "degC",
+      "category": "Temperature"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=kamstrup/multical",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=kamstrup/multical",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

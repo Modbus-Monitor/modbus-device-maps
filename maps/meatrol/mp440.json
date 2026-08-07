@@ -1,0 +1,118 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "meatrol/mp440",
+  "manufacturer": "Meatrol",
+  "manufacturer_slug": "meatrol",
+  "model": "MP440",
+  "slug": "mp440",
+  "title": "Meatrol MP440 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Meatrol MP440 power meter, with 12 representative status, temperature, voltage signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Status",
+    "Temperature",
+    "Voltage",
+    "Current",
+    "Power",
+    "Energy"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Voltage UA-UN V",
+      "display_address": "401010",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Rated current A",
+      "display_address": "300777",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Actual power con- sumption W",
+      "display_address": "300783",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Active energy import phase A kWh",
+      "display_address": "402000",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency phase A Hz",
+      "display_address": "401068",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "CP state",
+      "display_address": "300770",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "HMI temperature internal",
+      "display_address": "300768",
+      "data_type": "INT16",
+      "unit": "degC",
+      "category": "Temperature"
+    },
+    {
+      "name": "HCC3 error code",
+      "display_address": "300772",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Serial number",
+      "display_address": "300779",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "HMI temperature external",
+      "display_address": "300769",
+      "data_type": "INT16",
+      "unit": "degC",
+      "category": "Temperature"
+    },
+    {
+      "name": "PP state",
+      "display_address": "300771",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "State",
+      "display_address": "300773",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=meatrol/mp440",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=meatrol/mp440",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

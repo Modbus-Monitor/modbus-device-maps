@@ -1,0 +1,88 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "entes/es32",
+  "manufacturer": "ENTES",
+  "manufacturer_slug": "entes",
+  "model": "ES32",
+  "slug": "es32",
+  "title": "ENTES ES32 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the ENTES ES32 power meter, with 8 representative power, voltage, current signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Power",
+    "Voltage",
+    "Current",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Voltage V",
+      "display_address": "400005",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current mA",
+      "display_address": "400006",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Power factor",
+      "display_address": "400008",
+      "data_type": "UINT16",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "Frequency Hz",
+      "display_address": "400007",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Index Wh",
+      "display_address": "400003",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "General"
+    },
+    {
+      "name": "Active power kW",
+      "display_address": "400009",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Reactive power kVar",
+      "display_address": "400010",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Apparent power kVa",
+      "display_address": "400011",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    }
+  ],
+  "register_count": 8,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=entes/es32",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=entes/es32",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

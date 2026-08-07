@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "i-real/ws0101",
+  "manufacturer": "I-Real",
+  "manufacturer_slug": "i-real",
+  "model": "WS0101",
+  "slug": "ws0101",
+  "title": "I-Real WS0101 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the I-Real WS0101 power meter, with 12 representative energy, power, current signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Energy",
+    "Power",
+    "Current",
+    "Temperature"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Current active tariff",
+      "display_address": "300132",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Active power total Pt",
+      "display_address": "300089",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Energy counter 1 exponent",
+      "display_address": "300036",
+      "data_type": "INT16",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Internal temperature",
+      "display_address": "300125",
+      "data_type": "UINT16",
+      "unit": "degC",
+      "category": "Temperature"
+    },
+    {
+      "name": "Software reference",
+      "display_address": "300012",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Modbus max register read at once",
+      "display_address": "300013",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Energy counter 2 exponent",
+      "display_address": "300037",
+      "data_type": "INT16",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Energy counter 3 exponent",
+      "display_address": "300038",
+      "data_type": "INT16",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Energy counter 4 exponent",
+      "display_address": "300039",
+      "data_type": "INT16",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Reactive power total Qt",
+      "display_address": "300097",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Apparent power total St",
+      "display_address": "300105",
+      "data_type": "INT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Energy counter 1",
+      "display_address": "300133",
+      "data_type": "INT32",
+      "unit": "kWh",
+      "category": "Energy"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=i-real/ws0101",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=i-real/ws0101",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

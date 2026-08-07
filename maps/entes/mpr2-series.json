@@ -1,0 +1,118 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "entes/mpr2-series",
+  "manufacturer": "ENTES",
+  "manufacturer_slug": "entes",
+  "model": "MPR2 Series",
+  "slug": "mpr2-series",
+  "title": "ENTES MPR2 Series Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the ENTES MPR2 Series power meter, with 12 representative voltage, current, power signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Power",
+    "Energy",
+    "Frequency",
+    "Demand"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Voltage L1 N V10",
+      "display_address": "400000",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current L1 mA",
+      "display_address": "400014",
+      "data_type": "UINT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Active power L1 N W",
+      "display_address": "400026",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Consumed active energy L1 Wh",
+      "display_address": "400200",
+      "data_type": "INT64",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Measured frequency Hz 100",
+      "display_address": "400024",
+      "data_type": "UINT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Quadrant 1 total reactive powe demand Var10",
+      "display_address": "401208",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Input status",
+      "display_address": "400158",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Temperature input 1 C",
+      "display_address": "400138",
+      "data_type": "FLOAT32",
+      "unit": "degC",
+      "category": "Temperature"
+    },
+    {
+      "name": "Total harmonic distorsion VL1",
+      "display_address": "402006",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "Cosphi L1",
+      "display_address": "400082",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Voltage L2 N V10",
+      "display_address": "400002",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Voltage L3 N V10",
+      "display_address": "400004",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=entes/mpr2-series",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=entes/mpr2-series",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

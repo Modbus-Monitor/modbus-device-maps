@@ -1,0 +1,93 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "electropribor/shch-02-72-96-120",
+  "manufacturer": "Electropribor",
+  "manufacturer_slug": "electropribor",
+  "model": "SHCH 02,72,96,120",
+  "slug": "shch-02-72-96-120",
+  "title": "Electropribor SHCH 02,72,96,120 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Electropribor SHCH 02,72,96,120 power meter, with 9 representative frequency, status signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Frequency",
+    "Status"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Frequency 1",
+      "display_address": "300009",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Device state",
+      "display_address": "300005",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Result 1",
+      "display_address": "300000",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Frequency 2",
+      "display_address": "300011",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Result 2",
+      "display_address": "300002",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "EEPROM errors",
+      "display_address": "300006",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "ADC",
+      "display_address": "300012",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "PWM1",
+      "display_address": "300014",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "PWM2",
+      "display_address": "300015",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    }
+  ],
+  "register_count": 9,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=electropribor/shch-02-72-96-120",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=electropribor/shch-02-72-96-120",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

@@ -1,0 +1,115 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "ohio-semitronics/wvx-wtx-wmx",
+  "manufacturer": "Ohio Semitronics",
+  "manufacturer_slug": "ohio-semitronics",
+  "model": "WVx,WTx,WMx",
+  "slug": "wvx-wtx-wmx",
+  "title": "Ohio Semitronics WVx,WTx,WMx Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Ohio Semitronics WVx,WTx,WMx power meter, with 12 representative power, current, frequency signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Power",
+    "Current",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Current L1",
+      "display_address": "305220",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Power factor -1 to 1",
+      "display_address": "305206",
+      "data_type": "FLOAT32",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "Frequency 0 to 1000",
+      "display_address": "305232",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Watts total",
+      "display_address": "305200",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Current L2",
+      "display_address": "305222",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Current L3",
+      "display_address": "305224",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Power factor l1",
+      "display_address": "305246",
+      "data_type": "FLOAT32",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "Power factor l2",
+      "display_address": "305248",
+      "data_type": "FLOAT32",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "Power factor l3",
+      "display_address": "305250",
+      "data_type": "FLOAT32",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "Va total",
+      "display_address": "305202",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Vars total",
+      "display_address": "305204",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Volts L1 L2",
+      "display_address": "305208",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=ohio-semitronics/wvx-wtx-wmx",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=ohio-semitronics/wvx-wtx-wmx",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

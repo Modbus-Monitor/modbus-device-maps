@@ -1,0 +1,113 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "metering-dynamics/smarthub",
+  "manufacturer": "Metering Dynamics",
+  "manufacturer_slug": "metering-dynamics",
+  "model": "SmartHub",
+  "slug": "smarthub",
+  "title": "Metering Dynamics SmartHub Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Metering Dynamics SmartHub power meter, with 12 representative frequency signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Frequency",
+      "display_address": "400059",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Serial number",
+      "display_address": "400001",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Export wh total ch0",
+      "display_address": "400003",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Communication"
+    },
+    {
+      "name": "Va",
+      "display_address": "400011",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Import wh total ch1",
+      "display_address": "400005",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Communication"
+    },
+    {
+      "name": "Export varh total ch2",
+      "display_address": "400007",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Import varh total ch3",
+      "display_address": "400009",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Vb",
+      "display_address": "400013",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Vc",
+      "display_address": "400015",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Ia",
+      "display_address": "400017",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Ib",
+      "display_address": "400019",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Ic",
+      "display_address": "400021",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=metering-dynamics/smarthub",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=metering-dynamics/smarthub",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

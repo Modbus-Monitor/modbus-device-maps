@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "smartprocess/smartrail-x835",
+  "manufacturer": "SmartProcess",
+  "manufacturer_slug": "smartprocess",
+  "model": "SMARTRAIL X835",
+  "slug": "smartrail-x835",
+  "title": "SmartProcess SMARTRAIL X835 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the SmartProcess SMARTRAIL X835 power meter, with 12 representative energy, demand, current signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Energy",
+    "Demand",
+    "Current",
+    "Power"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "System current 00",
+      "display_address": "400008",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "System power 00",
+      "display_address": "400036",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Energy units prefix 00",
+      "display_address": "400030",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Demand time 00",
+      "display_address": "400000",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "System volts 00",
+      "display_address": "400006",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Network baud rate 00",
+      "display_address": "400028",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Serial number hi 00",
+      "display_address": "400042",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Demand period 00",
+      "display_address": "400002",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Relayl energy type 00",
+      "display_address": "400086",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Relay2 energy type 00",
+      "display_address": "400088",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "System type 00",
+      "display_address": "400010",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Relay pulse width 00",
+      "display_address": "400012",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=smartprocess/smartrail-x835",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=smartprocess/smartrail-x835",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

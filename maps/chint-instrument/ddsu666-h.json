@@ -1,0 +1,118 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "chint-instrument/ddsu666-h",
+  "manufacturer": "Chint Instrument",
+  "manufacturer_slug": "chint-instrument",
+  "model": "DDSU666-H",
+  "slug": "ddsu666-h",
+  "title": "Chint Instrument DDSU666-H Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Chint Instrument DDSU666-H power meter, with 12 representative power, voltage, current signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Power",
+    "Voltage",
+    "Current",
+    "Energy",
+    "Frequency",
+    "Power Factor"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "PVn voltage V",
+      "display_address": "302016",
+      "data_type": "INT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current time s",
+      "display_address": "310000",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Rated power kW",
+      "display_address": "300073",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Accumulated energy yield kWh",
+      "display_address": "302106",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Grid frequency Hz",
+      "display_address": "302085",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Active grid PF",
+      "display_address": "307117",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Status 1",
+      "display_address": "302000",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Internal temperature DC",
+      "display_address": "302087",
+      "data_type": "INT16",
+      "unit": "degC",
+      "category": "Temperature"
+    },
+    {
+      "name": "Serial number",
+      "display_address": "300015",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Number of strings",
+      "display_address": "300071",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Maximum active power kW",
+      "display_address": "300075",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Maximum apparent power kVA",
+      "display_address": "300077",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Power"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=chint-instrument/ddsu666-h",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=chint-instrument/ddsu666-h",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

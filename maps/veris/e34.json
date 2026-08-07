@@ -1,0 +1,118 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "veris/e34",
+  "manufacturer": "Veris",
+  "manufacturer_slug": "veris",
+  "model": "E34",
+  "slug": "e34",
+  "title": "Veris E34 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Veris E34 power meter, with 12 representative power, current, voltage signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Power",
+    "Current",
+    "Voltage",
+    "Energy",
+    "Frequency",
+    "Power Factor"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Voltage L l average of 3 phases Volts",
+      "display_address": "310145",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Average current Amperes",
+      "display_address": "310119",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Total kw kW",
+      "display_address": "310109",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power"
+    },
+    {
+      "name": "Total kwh msw kWh",
+      "display_address": "310101",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency derived from phase a Hertz",
+      "display_address": "310149",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Total pf PF",
+      "display_address": "310115",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Total kva kVA",
+      "display_address": "310113",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power"
+    },
+    {
+      "name": "Present kw demand kW",
+      "display_address": "310121",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Present current demand Amperes",
+      "display_address": "310127",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Max kw demand kW",
+      "display_address": "310129",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Max current demand Amperes",
+      "display_address": "310135",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Max kw kW",
+      "display_address": "310137",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=veris/e34",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=veris/e34",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}
