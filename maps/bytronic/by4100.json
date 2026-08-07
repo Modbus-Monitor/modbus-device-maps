@@ -1,0 +1,114 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "bytronic/by4100",
+  "manufacturer": "Bytronic",
+  "manufacturer_slug": "bytronic",
+  "model": "By4100",
+  "slug": "by4100",
+  "title": "Bytronic By4100 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Bytronic By4100 power meter, with 12 representative energy, frequency signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Energy",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Energia attiva consumata kWh",
+      "display_address": "400570",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Misura frequenza Hz",
+      "display_address": "400540",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Frequency"
+    },
+    {
+      "name": "Famiglia strumento",
+      "display_address": "400512",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Versione",
+      "display_address": "400513",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Energia attiva prodotta kWh",
+      "display_address": "400572",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Energia reattiva totale kvarh",
+      "display_address": "400574",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Tipo strumento",
+      "display_address": "400512",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Revisione",
+      "display_address": "400513",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "KRMSFACTOR",
+      "display_address": "400514",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Valore calibrazione fondoscala I1",
+      "display_address": "400515",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Valore calibrazione fondoscala I2",
+      "display_address": "400516",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Valore calibrazione fondoscala I3",
+      "display_address": "400517",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=bytronic/by4100",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=bytronic/by4100",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

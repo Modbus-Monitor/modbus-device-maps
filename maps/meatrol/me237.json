@@ -1,0 +1,118 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "meatrol/me237",
+  "manufacturer": "Meatrol",
+  "manufacturer_slug": "meatrol",
+  "model": "ME237",
+  "slug": "me237",
+  "title": "Meatrol ME237 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Meatrol ME237 power meter, with 12 representative voltage, current, power signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Power",
+    "Energy",
+    "Frequency",
+    "Demand"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Voltage value of phase A V",
+      "display_address": "401000",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current value of phase A A",
+      "display_address": "401016",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Active power of phase A W",
+      "display_address": "401026",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Positive active energy of phase A 01kWh",
+      "display_address": "404000",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Grid frequency Hz",
+      "display_address": "401066",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Calculation method of demand 0 sliding 1 fixed",
+      "display_address": "405000",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Maximum value of phase B reactive powe Var",
+      "display_address": "406082",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Voltage value of phase B V",
+      "display_address": "401002",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Voltage value of phase C V",
+      "display_address": "401004",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Average phase voltage value V",
+      "display_address": "401006",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Voltage value of line A-B V",
+      "display_address": "401008",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Voltage value of line B-C V",
+      "display_address": "401010",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=meatrol/me237",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=meatrol/me237",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

@@ -1,0 +1,117 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "inepro-metering/pro380",
+  "manufacturer": "Inepro Metering",
+  "manufacturer_slug": "inepro-metering",
+  "model": "PRO380",
+  "slug": "pro380",
+  "title": "Inepro Metering PRO380 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Inepro Metering PRO380 power meter, with 12 representative current, voltage, power signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Current",
+    "Voltage",
+    "Power",
+    "Energy",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Voltage V",
+      "display_address": "420480",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Meter amps A",
+      "display_address": "416395",
+      "data_type": "INT16",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Power down counter",
+      "display_address": "416406",
+      "data_type": "INT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "S0 output rate impkWh",
+      "display_address": "416397",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Grid frequency Hz",
+      "display_address": "420488",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Modbus ID",
+      "display_address": "416387",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Protocol version",
+      "display_address": "416389",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Combination code",
+      "display_address": "416399",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Current direction",
+      "display_address": "416402",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "L2 current direction",
+      "display_address": "416403",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "L3 current direction",
+      "display_address": "416404",
+      "data_type": "STRING",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "L1 voltage V",
+      "display_address": "420482",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=inepro-metering/pro380",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=inepro-metering/pro380",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

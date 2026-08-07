@@ -1,0 +1,118 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "tyco-electronics/integra-1630",
+  "manufacturer": "Tyco Electronics",
+  "manufacturer_slug": "tyco-electronics",
+  "model": "Integra 1630",
+  "slug": "integra-1630",
+  "title": "Tyco Electronics Integra 1630 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Tyco Electronics Integra 1630 power meter, with 12 representative current, power, voltage signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Current",
+    "Power",
+    "Voltage",
+    "Frequency",
+    "Demand",
+    "Harmonics"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "V L1 L2",
+      "display_address": "300200",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current 1",
+      "display_address": "300006",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Power factor phase 1",
+      "display_address": "300030",
+      "data_type": "FLOAT32",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "Frequency",
+      "display_address": "300070",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "W demand import",
+      "display_address": "300084",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Thd volts 1",
+      "display_address": "300234",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "Volts 1 L1 N 4w or L1 L2 3w",
+      "display_address": "300000",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Wh import",
+      "display_address": "300072",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Communication"
+    },
+    {
+      "name": "Current 2",
+      "display_address": "300008",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Current 3",
+      "display_address": "300010",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Power factor phase 2",
+      "display_address": "300032",
+      "data_type": "FLOAT32",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "Power factor phase 3",
+      "display_address": "300034",
+      "data_type": "FLOAT32",
+      "unit": "PF",
+      "category": "Power"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=tyco-electronics/integra-1630",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=tyco-electronics/integra-1630",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

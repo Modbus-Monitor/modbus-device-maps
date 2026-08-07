@@ -1,0 +1,118 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "larsen-toubro/er300p",
+  "manufacturer": "Larsen Toubro",
+  "manufacturer_slug": "larsen-toubro",
+  "model": "ER300P",
+  "slug": "er300p",
+  "title": "Larsen Toubro ER300P Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Larsen Toubro ER300P power meter, with 12 representative voltage, current, power signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Power",
+    "Energy",
+    "Frequency",
+    "Status"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "R line voltage V",
+      "display_address": "300000",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "R phase current C",
+      "display_address": "300006",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Total active power W",
+      "display_address": "300009",
+      "data_type": "INT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Cumulative energy forward Wh",
+      "display_address": "300022",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Average frequency",
+      "display_address": "300013",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Tamper status",
+      "display_address": "300014",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Anomaly string ASCII",
+      "display_address": "300030",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Y line voltage V",
+      "display_address": "300001",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "B line voltage V",
+      "display_address": "300002",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "R phase voltage V",
+      "display_address": "300003",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Y phase voltage V",
+      "display_address": "300004",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "B phase voltage V",
+      "display_address": "300005",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=larsen-toubro/er300p",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=larsen-toubro/er300p",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

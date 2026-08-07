@@ -1,0 +1,118 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "ff/le-03mq",
+  "manufacturer": "FF",
+  "manufacturer_slug": "ff",
+  "model": "LE-03MQ",
+  "slug": "le-03mq",
+  "title": "FF LE-03MQ Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the FF LE-03MQ power meter, with 12 representative voltage, current, power signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Power",
+    "Energy",
+    "Demand",
+    "Harmonics"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "L1 L-n phase voltage V",
+      "display_address": "300000",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "L1 current strength A",
+      "display_address": "300006",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "L1 active power W",
+      "display_address": "300012",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Imported active energy kWh MWh",
+      "display_address": "300072",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Total system VA demand 2 VA",
+      "display_address": "300100",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Phase 1 LN volts THD",
+      "display_address": "300234",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "L1 phase angle Degrees",
+      "display_address": "300036",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "L2 L-n phase voltage V",
+      "display_address": "300002",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "L3 L-n phase voltage V",
+      "display_address": "300004",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "L2 current strength A",
+      "display_address": "300008",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "L3 current strength A",
+      "display_address": "300010",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "L2 active power W",
+      "display_address": "300014",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=ff/le-03mq",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=ff/le-03mq",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

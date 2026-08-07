@@ -1,0 +1,118 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "chint-power/cps",
+  "manufacturer": "Chint Power",
+  "manufacturer_slug": "chint-power",
+  "model": "CPS",
+  "slug": "cps",
+  "title": "Chint Power CPS Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Chint Power CPS power meter, with 12 representative voltage, power, current signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Voltage",
+    "Power",
+    "Current",
+    "Frequency",
+    "Power Factor",
+    "Status"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Grid voltage uab V",
+      "display_address": "300031",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Grid A phase current A",
+      "display_address": "300034",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Maximum active ac power during the day kW",
+      "display_address": "300027",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Grid frequency Hz",
+      "display_address": "300043",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Permanent fault pfault",
+      "display_address": "300052",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Inverter operation state",
+      "display_address": "300047",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Internal inverter temperature C",
+      "display_address": "300045",
+      "data_type": "INT16",
+      "unit": "degC",
+      "category": "Temperature"
+    },
+    {
+      "name": "Error timestamp",
+      "display_address": "300048",
+      "data_type": "INT64",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Active ac power reading kW",
+      "display_address": "300029",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Apparent ac power reading kVA",
+      "display_address": "300030",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Grid voltage ubc V",
+      "display_address": "300032",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Grid voltage uca V",
+      "display_address": "300033",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=chint-power/cps",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=chint-power/cps",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

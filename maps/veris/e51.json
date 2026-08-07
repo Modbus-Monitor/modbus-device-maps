@@ -1,0 +1,117 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "veris/e51",
+  "manufacturer": "Veris",
+  "manufacturer_slug": "veris",
+  "model": "E51",
+  "slug": "e51",
+  "title": "Veris E51 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Veris E51 power meter, with 12 representative energy, voltage, current signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Energy",
+    "Voltage",
+    "Current",
+    "Power",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Voltage L-L average of active phases yolt",
+      "display_address": "300025",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current average of active phases Amp",
+      "display_address": "300027",
+      "data_type": "UINT16",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Apparent Q1-4 import kVAh",
+      "display_address": "300017",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Power"
+    },
+    {
+      "name": "Real energy diet import-export kWh",
+      "display_address": "300001",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency Hz",
+      "display_address": "300028",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Ct ratio secondary",
+      "display_address": "300132",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Real energy Q1-4 import kWh",
+      "display_address": "300003",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Real energy Q2-3 import kWh",
+      "display_address": "300005",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Reactive energy Q1 kVARh",
+      "display_address": "300007",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Reactive energy Q2 kVARh",
+      "display_address": "300009",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Reactive energy Q3 kVARh",
+      "display_address": "300011",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Reactive energy Q4 kVARh",
+      "display_address": "300013",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=veris/e51",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=veris/e51",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

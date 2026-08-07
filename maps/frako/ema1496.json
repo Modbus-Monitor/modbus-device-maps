@@ -1,0 +1,117 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "frako/ema1496",
+  "manufacturer": "Frako",
+  "manufacturer_slug": "frako",
+  "model": "EMA1496",
+  "slug": "ema1496",
+  "title": "Frako EMA1496 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Frako EMA1496 power meter, with 12 representative voltage, current, power signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Power",
+    "Demand",
+    "Harmonics"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Phase 1 line to neutral volts Volts",
+      "display_address": "300000",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Voltage"
+    },
+    {
+      "name": "Phase 1 current Amps",
+      "display_address": "300006",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Phase 1 power Watts",
+      "display_address": "300012",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Total system va demand VA",
+      "display_address": "300100",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Phase 1 ln volts thd",
+      "display_address": "300234",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "Phase 1 phase angle Degrees",
+      "display_address": "300036",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Phase 2 line to neutral volts Volts",
+      "display_address": "300002",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Voltage"
+    },
+    {
+      "name": "Phase 3 line to neutral volts Volts",
+      "display_address": "300004",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Voltage"
+    },
+    {
+      "name": "Phase 2 current Amps",
+      "display_address": "300008",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Phase 3 current Amps",
+      "display_address": "300010",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Phase 2 power Watts",
+      "display_address": "300014",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Phase 3 power Watts",
+      "display_address": "300016",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=frako/ema1496",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=frako/ema1496",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

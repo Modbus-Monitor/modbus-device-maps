@@ -1,0 +1,117 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "mikro/dpm680",
+  "manufacturer": "Mikro",
+  "manufacturer_slug": "mikro",
+  "model": "DPM680",
+  "slug": "dpm680",
+  "title": "Mikro DPM680 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Mikro DPM680 power meter, with 12 representative power, energy, voltage signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Power",
+    "Energy",
+    "Voltage",
+    "Current",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Voltage line ab V",
+      "display_address": "404028",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Instantaneous current A A",
+      "display_address": "404020",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Total real power W",
+      "display_address": "404012",
+      "data_type": "INT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Real energy Wh",
+      "display_address": "404000",
+      "data_type": "INT64",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency Hz",
+      "display_address": "404019",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Device type sub x0000",
+      "display_address": "400003",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Version number main x0000 0x0002",
+      "display_address": "400004",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "Baudrate selection 300 2600 31200 42400 54800 69600 719200 838400",
+      "display_address": "401002",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Apparent energy VAh",
+      "display_address": "404004",
+      "data_type": "INT64",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Reactive energy VArh",
+      "display_address": "404008",
+      "data_type": "INT64",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Total apparent power VA",
+      "display_address": "404014",
+      "data_type": "INT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Total reactive power VAr",
+      "display_address": "404016",
+      "data_type": "INT32",
+      "unit": "kW",
+      "category": "Power"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=mikro/dpm680",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=mikro/dpm680",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

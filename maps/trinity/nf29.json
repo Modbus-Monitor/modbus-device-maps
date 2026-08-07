@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "trinity/nf29",
+  "manufacturer": "Trinity",
+  "manufacturer_slug": "trinity",
+  "model": "NF29",
+  "slug": "nf29",
+  "title": "Trinity NF29 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Trinity NF29 power meter, with 12 representative power, energy, current signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Power",
+    "Energy",
+    "Current",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "3-phase Average amps A",
+      "display_address": "403011",
+      "data_type": "UINT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "3-phase KVA KVa",
+      "display_address": "402999",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Power"
+    },
+    {
+      "name": "3-phase KW KWh",
+      "display_address": "403001",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "R-phase Frequency Hz",
+      "display_address": "403035",
+      "data_type": "UINT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "3-phase Average VLL V",
+      "display_address": "403007",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "3-phase KVA KVar",
+      "display_address": "403003",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Power"
+    },
+    {
+      "name": "3-phase Power factor",
+      "display_address": "403005",
+      "data_type": "UINT32",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "R-phase KWh KWh",
+      "display_address": "403029",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "R-phase KVAh KVA",
+      "display_address": "403031",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Power"
+    },
+    {
+      "name": "R-phase KVARh KVARh",
+      "display_address": "403033",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "R-phase Power factor",
+      "display_address": "403043",
+      "data_type": "UINT32",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "R-phase KVA KVA",
+      "display_address": "403119",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Power"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=trinity/nf29",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=trinity/nf29",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

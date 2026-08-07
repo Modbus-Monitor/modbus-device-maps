@@ -1,0 +1,117 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "hobut/m850-mp1",
+  "manufacturer": "Hobut",
+  "manufacturer_slug": "hobut",
+  "model": "M850 MP1",
+  "slug": "m850-mp1",
+  "title": "Hobut M850 MP1 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Hobut M850 MP1 power meter, with 12 representative power, energy, current signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Power",
+    "Energy",
+    "Current",
+    "Frequency",
+    "Power Factor"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Neutralcurrent",
+      "display_address": "300050",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Kw sum",
+      "display_address": "300018",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Power"
+    },
+    {
+      "name": "Kwhr import",
+      "display_address": "300026",
+      "data_type": "UINT16",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Hz",
+      "display_address": "300030",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Frequency"
+    },
+    {
+      "name": "Pf avg",
+      "display_address": "300024",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Vu 2",
+      "display_address": "300000",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Kva sum",
+      "display_address": "300020",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Power"
+    },
+    {
+      "name": "Kvar sum",
+      "display_address": "300022",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Power"
+    },
+    {
+      "name": "Kvarhr import",
+      "display_address": "300028",
+      "data_type": "UINT16",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Kwd import",
+      "display_address": "300044",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Power"
+    },
+    {
+      "name": "Kvad",
+      "display_address": "300046",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Power"
+    },
+    {
+      "name": "Max kwd import",
+      "display_address": "300074",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Power"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=hobut/m850-mp1",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=hobut/m850-mp1",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

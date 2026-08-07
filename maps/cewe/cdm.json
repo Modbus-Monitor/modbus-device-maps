@@ -1,0 +1,117 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "cewe/cdm",
+  "manufacturer": "Cewe",
+  "manufacturer_slug": "cewe",
+  "model": "CDM",
+  "slug": "cdm",
+  "title": "Cewe CDM Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Cewe CDM power meter, with 12 representative voltage, current, power signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Power",
+    "Energy",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "V1 L N voltage phase 1 V",
+      "display_address": "404096",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "A1 phase 1 current A",
+      "display_address": "404110",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "PF1 phase 1 power factor",
+      "display_address": "404120",
+      "data_type": "FLOAT32",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "kwh1 phase 1 imported active energy Wh",
+      "display_address": "404352",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "F frequency Hz",
+      "display_address": "404152",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "V2 L N voltage phase 2 V",
+      "display_address": "404098",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "V3 L N voltage phase 3 V",
+      "display_address": "404100",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "V12 L L voltage line 12 V",
+      "display_address": "404102",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "V23 L L voltage line 23 V",
+      "display_address": "404104",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "V31 L L voltage line 31 V",
+      "display_address": "404106",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "V system voltage V",
+      "display_address": "404108",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "A2 phase 2 current A",
+      "display_address": "404112",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Current"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=cewe/cdm",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=cewe/cdm",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

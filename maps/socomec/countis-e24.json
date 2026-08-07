@@ -1,116 +1,116 @@
 {
   "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "id": "socomec/countis-e24",
   "manufacturer": "Socomec",
   "manufacturer_slug": "socomec",
   "model": "Countis E24",
   "slug": "countis-e24",
   "title": "Socomec Countis E24 Modbus Register Map",
-  "description": "Socomec Countis E24 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Socomec Countis E24 Modbus register list, Socomec Countis E24 Modbus table.",
+  "description": "Official Modbus Monitor XPF preview for the Socomec Countis E24 power meter, with 12 representative voltage, current, power signals.",
   "device_type": "Power Meter",
-  "protocol": "Modbus",
+  "protocol": "Modbus RTU / Modbus TCP",
   "categories": [
-    "Energy",
-    "Power",
     "Voltage",
     "Current",
-    "Frequency",
-    "Status"
+    "Power",
+    "Energy"
   ],
-  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
   "registers": [
     {
-      "name": "Phase to Phase Voltage U12 V",
+      "name": "Phase to phase voltage U12",
       "display_address": "450514",
       "data_type": "UINT32",
       "unit": "V",
       "category": "Voltage"
     },
     {
-      "name": "Current I1 A",
+      "name": "Current I1",
       "display_address": "450528",
       "data_type": "UINT32",
       "unit": "-",
       "category": "Current"
     },
     {
-      "name": "Sum Active Power P P W",
+      "name": "Active power - P",
       "display_address": "450536",
       "data_type": "INT32",
       "unit": "kW",
       "category": "Power"
     },
     {
-      "name": "Partial Positive Active Energy EaP Wh",
+      "name": "Partial positive active energy ea",
       "display_address": "450780",
       "data_type": "UINT32",
       "unit": "kWh",
       "category": "Energy"
     },
     {
-      "name": "Frequency F Hz",
-      "display_address": "450526",
-      "data_type": "UINT32",
-      "unit": "Hz",
-      "category": "Frequency"
-    },
-    {
-      "name": "MID status 0 non MID product 1 MID product",
-      "display_address": "440545",
-      "data_type": "UINT16",
-      "unit": "-",
-      "category": "Status"
-    },
-    {
-      "name": "SOCO :4",
+      "name": "Product name",
       "display_address": "450000",
       "data_type": "STRING",
-      "unit": "-",
-      "category": "General"
-    },
-    {
-      "name": "JBUS Table Version EX 101 Version 1 01",
-      "display_address": "450006",
-      "data_type": "UINT16",
       "unit": "-",
       "category": "Identification"
     },
     {
-      "name": "Slave Address",
-      "display_address": "457344",
+      "name": "Product order ID Countis100 protection200 atys300 diris400",
+      "display_address": "450004",
       "data_type": "UINT16",
       "unit": "-",
-      "category": "Communication"
+      "category": "General"
     },
     {
-      "name": "Phase to Phase Voltage U23 V",
+      "name": "Phase to phase voltage U23",
       "display_address": "450516",
       "data_type": "UINT32",
       "unit": "V",
       "category": "Voltage"
     },
     {
-      "name": "Phase to Phase Voltage U31 V",
+      "name": "Phase to phase voltage U31",
       "display_address": "450518",
       "data_type": "UINT32",
       "unit": "V",
       "category": "Voltage"
     },
     {
-      "name": "Simple voltage V1 V",
+      "name": "Simple voltage V1",
       "display_address": "450520",
       "data_type": "UINT32",
       "unit": "V",
       "category": "Voltage"
+    },
+    {
+      "name": "Simple voltage V2",
+      "display_address": "450522",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Simple voltage V3",
+      "display_address": "450524",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current I2",
+      "display_address": "450530",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Current"
     }
   ],
   "register_count": 12,
+  "guide_status": "published",
   "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/socomec/countis-e24/",
   "product": {
     "name": "Modbus Monitor XPF",
     "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/countis-e24",
-    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/countis-e24"
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/countis-e24",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
   },
   "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
 }

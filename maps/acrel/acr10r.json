@@ -1,0 +1,118 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "acrel/acr10r",
+  "manufacturer": "Acrel",
+  "manufacturer_slug": "acrel",
+  "model": "ACR10R",
+  "slug": "acr10r",
+  "title": "Acrel ACR10R Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Acrel ACR10R power meter, with 12 representative voltage, current, power signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Power",
+    "Energy",
+    "Frequency",
+    "Demand"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Secondary side rated voltage ue V",
+      "display_address": "400004",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Secondary side rated current value ie A",
+      "display_address": "400005",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Power primary and secondary side coefficients",
+      "display_address": "400018",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "This month active peak electric energy kWh",
+      "display_address": "400333",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency F",
+      "display_address": "400252",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Maximum demand",
+      "display_address": "400301",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "DIDO state",
+      "display_address": "401000",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Communication speed bps",
+      "display_address": "400001",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Wiring mode wire",
+      "display_address": "400003",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Primary side rated voltage PU kV",
+      "display_address": "400006",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Voltage primary side and",
+      "display_address": "400014",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Primary side and secondary side coefficient of current",
+      "display_address": "400016",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Current"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=acrel/acr10r",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=acrel/acr10r",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

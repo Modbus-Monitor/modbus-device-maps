@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "orno/or-we-514-or-we-515",
+  "manufacturer": "Orno",
+  "manufacturer_slug": "orno",
+  "model": "OR-WE-514,OR-WE-515",
+  "slug": "or-we-514-or-we-515",
+  "title": "Orno OR-WE-514,OR-WE-515 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Orno OR-WE-514,OR-WE-515 power meter, with 12 representative power, voltage, current signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Power",
+    "Voltage",
+    "Current",
+    "Demand"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Phase voltage V1 V",
+      "display_address": "400305",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Phase current I1 A",
+      "display_address": "400314",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Split phase active powerp1 kW",
+      "display_address": "400321",
+      "data_type": "INT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Last month demand",
+      "display_address": "441008",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Demand"
+    },
+    {
+      "name": "Phase voltage V2 V",
+      "display_address": "400306",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Phase voltage V3 V",
+      "display_address": "400307",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Phase current I2 A",
+      "display_address": "400316",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Phase current I3 A",
+      "display_address": "400318",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Split phase active powerp2 kW",
+      "display_address": "400323",
+      "data_type": "INT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Split phase active powerp3 kW",
+      "display_address": "400325",
+      "data_type": "INT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "System active power psum kW",
+      "display_address": "400327",
+      "data_type": "INT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Split phase reactive power Q1 kvar",
+      "display_address": "400329",
+      "data_type": "INT32",
+      "unit": "kW",
+      "category": "Power"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=orno/or-we-514-or-we-515",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=orno/or-we-514-or-we-515",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

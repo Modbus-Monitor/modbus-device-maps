@@ -1,0 +1,118 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "enerdis/enerium-100-200",
+  "manufacturer": "Enerdis",
+  "manufacturer_slug": "enerdis",
+  "model": "Enerium 100-200",
+  "slug": "enerium-100-200",
+  "title": "Enerdis Enerium 100-200 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Enerdis Enerium 100-200 power meter, with 12 representative power factor, voltage, current signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Power Factor",
+    "Voltage",
+    "Current",
+    "Energy",
+    "Frequency",
+    "Harmonics"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Unbalance of the voltages",
+      "display_address": "401348",
+      "data_type": "INT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Hour meter presence of current",
+      "display_address": "402564",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Active energy receiver mode Wh",
+      "display_address": "402566",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency Hz",
+      "display_address": "401349",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "PF1",
+      "display_address": "401326",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Harmonics order by order V1 0 to 50",
+      "display_address": "401536",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "V1 V",
+      "display_address": "401280",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Quadrant PF1",
+      "display_address": "401327",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "PF2",
+      "display_address": "401328",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Quadrant PF2",
+      "display_address": "401329",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "PF3",
+      "display_address": "401330",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Quadrant PF3",
+      "display_address": "401331",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Power Factor"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=enerdis/enerium-100-200",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=enerdis/enerium-100-200",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

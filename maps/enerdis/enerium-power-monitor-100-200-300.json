@@ -1,0 +1,117 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "enerdis/enerium-power-monitor-100-200-300",
+  "manufacturer": "Enerdis",
+  "manufacturer_slug": "enerdis",
+  "model": "Enerium Power Monitor 100-200-300",
+  "slug": "enerium-power-monitor-100-200-300",
+  "title": "Enerdis Enerium Power Monitor 100-200-300 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Enerdis Enerium Power Monitor 100-200-300 power meter, with 12 representative frequency, current, voltage signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Frequency",
+    "Current",
+    "Voltage",
+    "Energy",
+    "Harmonics"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Voltage unbalance",
+      "display_address": "401348",
+      "data_type": "INT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Output 2 min Current",
+      "display_address": "427802",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Active energy receiver mode",
+      "display_address": "402454",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency Hz",
+      "display_address": "401349",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Maxima of mean thd V1",
+      "display_address": "403072",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "Output 2 min Quantity",
+      "display_address": "427798",
+      "data_type": "INT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Output 2 max Current",
+      "display_address": "427803",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Frequency Hz",
+      "display_address": "401352",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Minima of frequency Hz",
+      "display_address": "402848",
+      "data_type": "UINT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Date of minima of frequency",
+      "display_address": "402850",
+      "data_type": "UINT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Maxima of frequency Hz",
+      "display_address": "402992",
+      "data_type": "UINT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Date of maxima of frequency",
+      "display_address": "402994",
+      "data_type": "UINT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=enerdis/enerium-power-monitor-100-200-300",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=enerdis/enerium-power-monitor-100-200-300",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

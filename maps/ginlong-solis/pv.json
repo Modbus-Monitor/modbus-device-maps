@@ -1,0 +1,118 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "ginlong-solis/pv",
+  "manufacturer": "Ginlong Solis",
+  "manufacturer_slug": "ginlong-solis",
+  "model": "PV",
+  "slug": "pv",
+  "title": "Ginlong Solis PV Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Ginlong Solis PV solar inverter, with 12 representative power, voltage, current signals.",
+  "device_type": "Solar Inverter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Power",
+    "Voltage",
+    "Current",
+    "Energy",
+    "Frequency",
+    "Temperature"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Dc voltage 1 V",
+      "display_address": "303048",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Dc current 1 A",
+      "display_address": "303049",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Inverter total power generation kW",
+      "display_address": "303028",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Energy storage control switch",
+      "display_address": "303131",
+      "data_type": "UINT16",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Grid frequency Hz",
+      "display_address": "303093",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Inverter temperature",
+      "display_address": "303092",
+      "data_type": "UINT16",
+      "unit": "degC",
+      "category": "Temperature"
+    },
+    {
+      "name": "System time year a",
+      "display_address": "303021",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Inverter power generation in the month kW",
+      "display_address": "303030",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Inverted last months power generation kW",
+      "display_address": "303032",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Inverter power generation today kW",
+      "display_address": "303034",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Inverter yesterdays power generation kW",
+      "display_address": "303035",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Inverter power generation this year kW",
+      "display_address": "303036",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Power"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=ginlong-solis/pv",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=ginlong-solis/pv",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

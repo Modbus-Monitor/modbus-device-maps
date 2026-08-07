@@ -1,0 +1,118 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "meatrol/me631",
+  "manufacturer": "Meatrol",
+  "manufacturer_slug": "meatrol",
+  "model": "ME631",
+  "slug": "me631",
+  "title": "Meatrol ME631 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Meatrol ME631 power meter, with 12 representative power, voltage, current signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Power",
+    "Voltage",
+    "Current",
+    "Energy",
+    "Frequency",
+    "Power Factor"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Phase 1 X times harmonics voltage distortion",
+      "display_address": "402083",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Phase 1 X times harmonics current distortion",
+      "display_address": "402027",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Phase 1 power factor",
+      "display_address": "402000",
+      "data_type": "FLOAT32",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "Active energy import phase 1 kWh",
+      "display_address": "404000",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Phase 1 frequency Hz",
+      "display_address": "402016",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Average of PF1 PF2 PF3",
+      "display_address": "402006",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Power Factor"
+    },
+    {
+      "name": "Average of I1THDx I2THDx I3THDx",
+      "display_address": "402033",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "Range2-52",
+      "display_address": "402024",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Phase 2 power factor",
+      "display_address": "402002",
+      "data_type": "FLOAT32",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "Phase 3 power factor",
+      "display_address": "402004",
+      "data_type": "FLOAT32",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "Phase 1 displacement power factor",
+      "display_address": "402008",
+      "data_type": "FLOAT32",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "Phase 2 displacement power factor",
+      "display_address": "402010",
+      "data_type": "FLOAT32",
+      "unit": "PF",
+      "category": "Power"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=meatrol/me631",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=meatrol/me631",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

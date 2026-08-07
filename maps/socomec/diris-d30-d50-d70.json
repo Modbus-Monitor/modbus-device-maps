@@ -1,24 +1,24 @@
 {
   "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "id": "socomec/diris-d30-d50-d70",
   "manufacturer": "Socomec",
   "manufacturer_slug": "socomec",
-  "model": "DIRIS,D30,D50,D70 _",
+  "model": "DIRIS,D30,D50,D70",
   "slug": "diris-d30-d50-d70",
-  "title": "Socomec DIRIS,D30,D50,D70 _ Modbus Register Map",
-  "description": "Socomec DIRIS,D30,D50,D70 _ Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Socomec DIRIS,D30,D50,D70 _ Modbus register list, Socomec DIRIS,D30,D50,D70 _ Modbus table.",
+  "title": "Socomec DIRIS,D30,D50,D70 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Socomec DIRIS,D30,D50,D70 power meter, with 12 representative voltage, current, power signals.",
   "device_type": "Power Meter",
-  "protocol": "Modbus",
+  "protocol": "Modbus RTU / Modbus TCP",
   "categories": [
-    "Energy",
     "Voltage",
     "Current",
     "Power",
-    "Status",
-    "Frequency"
+    "Energy",
+    "Frequency",
+    "Status"
   ],
-  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
   "registers": [
     {
       "name": "Inst Measurement Load 1 Ph N voltage V1 V",
@@ -106,11 +106,13 @@
     }
   ],
   "register_count": 12,
+  "guide_status": "published",
   "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/socomec/diris-d30-d50-d70/",
   "product": {
     "name": "Modbus Monitor XPF",
     "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/diris-d30-d50-d70",
-    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/diris-d30-d50-d70"
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/diris-d30-d50-d70",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
   },
   "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
 }

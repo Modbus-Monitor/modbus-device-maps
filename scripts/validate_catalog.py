@@ -20,10 +20,12 @@ REQUIRED_MAP_FIELDS = {
     "protocol",
     "address_display_convention",
     "registers",
+    "guide_status",
     "documentation_url",
     "product",
 }
 REQUIRED_REGISTER_FIELDS = {"name", "display_address", "data_type", "unit", "category"}
+PRIVATE_TOKENS = {"source_csv", "preview_registers", "regunitid", "reggain", "regoffset", "regwrite", "\\interim\\", "workbench"}
 
 
 def main() -> None:
@@ -52,6 +54,18 @@ def main() -> None:
             continue
         if payload.get("register_count") != len(registers):
             errors.append(f"{identifier}: register_count does not match registers")
+        if not 6 <= len(registers) <= 12:
+            errors.append(f"{identifier}: previews must contain 6-12 registers")
+        if payload.get("guide_status") == "published" and not payload.get("documentation_url"):
+            errors.append(f"{identifier}: published guide has no documentation_url")
+        if payload.get("guide_status") == "upcoming" and payload.get("documentation_url"):
+            errors.append(f"{identifier}: upcoming guide must not have a documentation_url")
+        if not (root / "pages" / identifier / "index.html").is_file():
+            errors.append(f"{identifier}: missing static preview page")
+        serialized = json.dumps(payload, ensure_ascii=False).lower()
+        exposed = sorted(token for token in PRIVATE_TOKENS if token in serialized)
+        if exposed:
+            errors.append(f"{identifier}: possible private source field(s) {exposed}")
         for index, register in enumerate(registers):
             missing_register = REQUIRED_REGISTER_FIELDS - register.keys()
             if missing_register:
@@ -61,6 +75,8 @@ def main() -> None:
 
     if catalog.get("map_count") != len(catalog.get("maps", [])):
         errors.append("catalog map_count does not match maps array")
+    if "<loc>" not in (root / "sitemap.xml").read_text(encoding="utf-8"):
+        errors.append("sitemap has no URLs")
     actual_files = set((root / "maps").rglob("*.json"))
     expected_files = {root / entry["json_url"] for entry in catalog.get("maps", [])}
     for path in sorted(actual_files - expected_files):

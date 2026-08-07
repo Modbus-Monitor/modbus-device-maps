@@ -1,6 +1,6 @@
 {
   "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "id": "electro-industries/shark-200",
   "manufacturer": "Electro Industries",
   "manufacturer_slug": "electro-industries",
@@ -110,7 +110,9 @@
   "product": {
     "name": "Modbus Monitor XPF",
     "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=electro-industries/shark-200",
-    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=electro-industries/shark-200"
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=electro-industries/shark-200",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
   },
-  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root.",
+  "guide_status": "published"
 }

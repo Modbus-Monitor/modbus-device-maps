@@ -1,0 +1,117 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "saia-energy-meter/ald1-ale3-awd3",
+  "manufacturer": "SAIA Energy Meter",
+  "manufacturer_slug": "saia-energy-meter",
+  "model": "ALD1, ALE3, AWD3",
+  "slug": "ald1-ale3-awd3",
+  "title": "SAIA Energy Meter ALD1, ALE3, AWD3 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the SAIA Energy Meter ALD1, ALE3, AWD3 power meter, with 12 representative voltage, current, power signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Power",
+    "Energy",
+    "Status"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "URMS phase 1 Effective Voltage of Phase 1 V",
+      "display_address": "400036",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "IRMS phase 1 Effective Current of Phase 1 A",
+      "display_address": "400037",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "PRMS phase 1 Effective active Power of Phase 1 kW",
+      "display_address": "400038",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "WT1 total Counter Energy Total Tariff 1 kWh",
+      "display_address": "400028",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Status Protect",
+      "display_address": "400022",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Modbus com Number of supported registers",
+      "display_address": "400002",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "Not Used",
+      "display_address": "400006",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Serial number",
+      "display_address": "400016",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Identification"
+    },
+    {
+      "name": "WT2 total Counter Energy Total Tariff 2 kWh",
+      "display_address": "400032",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "QRMS phase 1 Effective reactive Power of Phase 1 kvar",
+      "display_address": "400039",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "URMS phase 2 Effective Voltage of Phase 2 V",
+      "display_address": "400041",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "IRMS phase 2 Effective Current of Phase 2 A",
+      "display_address": "400042",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=saia-energy-meter/ald1-ale3-awd3",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=saia-energy-meter/ald1-ale3-awd3",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

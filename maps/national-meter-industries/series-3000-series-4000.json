@@ -1,0 +1,108 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "national-meter-industries/series-3000-series-4000",
+  "manufacturer": "National Meter Industries",
+  "manufacturer_slug": "national-meter-industries",
+  "model": "Series 3000, Series 4000",
+  "slug": "series-3000-series-4000",
+  "title": "National Meter Industries Series 3000, Series 4000 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the National Meter Industries Series 3000, Series 4000 power meter, with 11 representative power, current, energy signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Power",
+    "Current",
+    "Energy"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Current phase 1 mA",
+      "display_address": "400003",
+      "data_type": "UINT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Active power phase 1 W",
+      "display_address": "400005",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Active energy Wh",
+      "display_address": "400019",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Voltaje phase 1 V",
+      "display_address": "400001",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Current phase 2 mA",
+      "display_address": "400009",
+      "data_type": "UINT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Active power phase 2 W",
+      "display_address": "400011",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Active power phase 3 W",
+      "display_address": "400017",
+      "data_type": "UINT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Voltaje phase 2 V",
+      "display_address": "400007",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Voltaje phase 3 V",
+      "display_address": "400013",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Corrent phase 3 mA",
+      "display_address": "400015",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Max maximum",
+      "display_address": "400021",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    }
+  ],
+  "register_count": 11,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=national-meter-industries/series-3000-series-4000",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=national-meter-industries/series-3000-series-4000",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

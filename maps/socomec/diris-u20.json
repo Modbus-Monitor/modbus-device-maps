@@ -1,116 +1,114 @@
 {
   "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "id": "socomec/diris-u20",
   "manufacturer": "Socomec",
   "manufacturer_slug": "socomec",
   "model": "DIRIS U20",
   "slug": "diris-u20",
   "title": "Socomec DIRIS U20 Modbus Register Map",
-  "description": "Socomec DIRIS U20 Modbus map and register map with sample Modbus registers, register addresses, and power meter overview for engineers. Works with Modbus Monitor XPF (import directly) and includes downloadable CSV access in-app. Common searches: Socomec DIRIS U20 Modbus register list, Socomec DIRIS U20 Modbus table.",
+  "description": "Official Modbus Monitor XPF preview for the Socomec DIRIS U20 power meter, with 12 representative voltage, frequency signals.",
   "device_type": "Power Meter",
-  "protocol": "Modbus",
+  "protocol": "Modbus RTU / Modbus TCP",
   "categories": [
-    "Power",
-    "Current",
     "Voltage",
-    "Energy",
-    "Status",
-    "Harmonics"
+    "Frequency"
   ],
-  "address_display_convention": "Display address copied from the published preview. Modbus reference-number and zero-based offset conventions vary by device; verify the linked documentation and manufacturer manual before polling.",
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
   "registers": [
     {
-      "name": "Hour meter allocation1 Auxiliary power supply 2 Currents3 phase to phase voltage 4 Input 1 5 Input2 6 Input3",
-      "display_address": "436361",
-      "data_type": "UINT16",
+      "name": "Inst Measurement Network Ph N voltage V1 V",
+      "display_address": "436869",
+      "data_type": "UINT32",
       "unit": "V",
       "category": "Voltage"
     },
     {
-      "name": "Current Transformer secondary",
-      "display_address": "457345",
-      "data_type": "UINT16",
-      "unit": "-",
-      "category": "Current"
-    },
-    {
-      "name": "Reactive Power Calculation",
-      "display_address": "436369",
-      "data_type": "UINT16",
-      "unit": "kW",
-      "category": "Power"
-    },
-    {
-      "name": "OUT pulse output value 0 0 1 kWh kvarh1 1 kWh kvarh2 10 kWh kvarh3 100 kWh kvarh4 1000 kWh kvarh5 10000 kWh kvarh",
-      "display_address": "436359",
-      "data_type": "UINT16",
-      "unit": "kWh",
-      "category": "Energy"
-    },
-    {
-      "name": "Frequency F Hz",
-      "display_address": "450526",
+      "name": "Inst Measurement Network Frequency Hz",
+      "display_address": "436867",
       "data_type": "UINT32",
       "unit": "Hz",
       "category": "Frequency"
     },
     {
-      "name": "Alarm Type 1 I2 In3 U4 V5 PP6 QP7 SP8 PFC9 PFL10 THDU11 THDV12 THDI13 HOUR14 F",
-      "display_address": "436363",
-      "data_type": "UINT16",
-      "unit": "-",
-      "category": "Power Factor"
-    },
-    {
-      "name": "Alarm Specified time 1 999 s",
-      "display_address": "436364",
-      "data_type": "UINT16",
-      "unit": "-",
-      "category": "Status"
-    },
-    {
-      "name": "thd U12",
-      "display_address": "451536",
-      "data_type": "UINT16",
-      "unit": "-",
-      "category": "Harmonics"
-    },
-    {
-      "name": "SOCO :4",
-      "display_address": "450000",
-      "data_type": "STRING",
+      "name": "Inst Measurement Network Date of last instance s",
+      "display_address": "436864",
+      "data_type": "UINT32",
       "unit": "-",
       "category": "General"
     },
     {
-      "name": "JBUS Table Version EX 101 Version 1 01",
-      "display_address": "450006",
-      "data_type": "UINT16",
-      "unit": "-",
-      "category": "Identification"
+      "name": "Inst Measurement Network Ph N voltage V2 V",
+      "display_address": "436871",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
     },
     {
-      "name": "Product option code bit field bit 1 Metering Optionbit 2 Communication optionbit 3 3 inputs 1 output option",
-      "display_address": "436096",
-      "data_type": "UINT16",
-      "unit": "-",
-      "category": "Communication"
+      "name": "Inst Measurement Network Ph N voltage V3 V",
+      "display_address": "436873",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
     },
     {
-      "name": "Current Transformer primary A",
-      "display_address": "457346",
-      "data_type": "UINT16",
-      "unit": "-",
-      "category": "Current"
+      "name": "Inst Measurement Network Ph ph voltage U12 V",
+      "display_address": "436875",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Inst Measurement Network Ph ph voltage U23 V",
+      "display_address": "436877",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Inst Measurement Network Ph ph voltage U31 V",
+      "display_address": "436879",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Inst Fundamental measurement Network Ph N voltage v1h1 V",
+      "display_address": "437123",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Inst Fundamental measurement Network Ph N voltage v2h1 V",
+      "display_address": "437125",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Inst Fundamental measurement Network Ph N voltage v3h1 V",
+      "display_address": "437127",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Inst Fundamental measurement Network Ph N voltage vnh1 V",
+      "display_address": "437129",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
     }
   ],
   "register_count": 12,
+  "guide_status": "published",
   "documentation_url": "https://docs.quantumbitsolutions.com/products/xpf/device-maps/socomec/diris-u20/",
   "product": {
     "name": "Modbus Monitor XPF",
     "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/diris-u20",
-    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/diris-u20"
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=socomec/diris-u20",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
   },
   "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
 }

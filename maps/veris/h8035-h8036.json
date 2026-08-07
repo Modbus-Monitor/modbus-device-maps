@@ -1,0 +1,116 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "veris/h8035-h8036",
+  "manufacturer": "Veris",
+  "manufacturer_slug": "veris",
+  "model": "H8035,H8036",
+  "slug": "h8035-h8036",
+  "title": "Veris H8035,H8036 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Veris H8035,H8036 power meter, with 12 representative power, voltage, energy signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Power",
+    "Voltage",
+    "Energy",
+    "Current"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Voltage line to line VOLTS",
+      "display_address": "400268",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current AMPS",
+      "display_address": "400272",
+      "data_type": "FLOAT32",
+      "unit": "A",
+      "category": "Current"
+    },
+    {
+      "name": "Real power KW",
+      "display_address": "400260",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Energy consumption KWH",
+      "display_address": "400256",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Yoltage phase A N VOLTS",
+      "display_address": "400292",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Energy onsumption same 40257 KWH",
+      "display_address": "400258",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Reactive power VAR",
+      "display_address": "400262",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Apparent power YA",
+      "display_address": "400264",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Power fator",
+      "display_address": "400266",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Voltage line to neutral VOLTS",
+      "display_address": "400270",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Real power phase A KW",
+      "display_address": "400274",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Real power phase B KW",
+      "display_address": "400276",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=veris/h8035-h8036",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=veris/h8035-h8036",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

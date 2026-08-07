@@ -72,9 +72,17 @@
     const links = document.createElement("div");
     links.className = "card-links";
     links.append(
-      createLink("Open JSON", item.json_url, "json-link"),
-      createLink("Device guide", item.documentation_url, "docs-link")
+      createLink("View preview", item.preview_url, "docs-link"),
+      createLink("Open JSON", item.json_url, "json-link")
     );
+    if (item.guide_status === "published" && item.documentation_url) {
+      links.append(createLink("Device guide", item.documentation_url, "docs-link"));
+    } else {
+      const guide = document.createElement("span");
+      guide.className = "guide-badge";
+      guide.textContent = "Guide upcoming";
+      links.append(guide);
+    }
     card.append(top, title, description, categories, links);
     return card;
   };

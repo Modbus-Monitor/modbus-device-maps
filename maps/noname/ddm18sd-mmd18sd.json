@@ -1,0 +1,89 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "noname/ddm18sd-mmd18sd",
+  "manufacturer": "Noname",
+  "manufacturer_slug": "noname",
+  "model": "DDM18SD,MMD18SD",
+  "slug": "ddm18sd-mmd18sd",
+  "title": "Noname DDM18SD,MMD18SD Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Noname DDM18SD,MMD18SD power meter, with 8 representative power, energy, voltage signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Power",
+    "Energy",
+    "Voltage",
+    "Current",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Voltage V",
+      "display_address": "400000",
+      "data_type": "FLOAT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current A",
+      "display_address": "400008",
+      "data_type": "FLOAT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Active power KW",
+      "display_address": "400018",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Total active power kWh",
+      "display_address": "400256",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency Hz",
+      "display_address": "400054",
+      "data_type": "FLOAT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Reactive power VAr",
+      "display_address": "400026",
+      "data_type": "FLOAT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Power factor",
+      "display_address": "400042",
+      "data_type": "FLOAT32",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "Total reactive power kVarh",
+      "display_address": "401024",
+      "data_type": "FLOAT32",
+      "unit": "kWh",
+      "category": "Energy"
+    }
+  ],
+  "register_count": 8,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=noname/ddm18sd-mmd18sd",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=noname/ddm18sd-mmd18sd",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

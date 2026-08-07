@@ -1,0 +1,118 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "vato-electric/rgk800",
+  "manufacturer": "vato Electric",
+  "manufacturer_slug": "vato-electric",
+  "model": "RGK800",
+  "slug": "rgk800",
+  "title": "vato Electric RGK800 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the vato Electric RGK800 power meter, with 12 representative voltage, current, power signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Voltage",
+    "Current",
+    "Power",
+    "Energy",
+    "Frequency",
+    "Temperature"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "L1 phase voltage - mains V",
+      "display_address": "400002",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "L1 current A",
+      "display_address": "400014",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "L1 active power - mains W",
+      "display_address": "400034",
+      "data_type": "INT32",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Total imp active energy - mains kWh",
+      "display_address": "406688",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency - mains Hz",
+      "display_address": "400086",
+      "data_type": "UINT32",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Temperature DC",
+      "display_address": "404000",
+      "data_type": "UINT32",
+      "unit": "degC",
+      "category": "Temperature"
+    },
+    {
+      "name": "Engine speed Rpm",
+      "display_address": "400142",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Modbus function 17 clone",
+      "display_address": "403992",
+      "data_type": "UINT32",
+      "unit": "-",
+      "category": "Communication"
+    },
+    {
+      "name": "L2 phase voltage - mains V",
+      "display_address": "400004",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "L3 phase voltage - mains V",
+      "display_address": "400006",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "L1 phase voltage - generator V",
+      "display_address": "400008",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "L2 phase voltage - generator V",
+      "display_address": "400010",
+      "data_type": "UINT32",
+      "unit": "V",
+      "category": "Voltage"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=vato-electric/rgk800",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=vato-electric/rgk800",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

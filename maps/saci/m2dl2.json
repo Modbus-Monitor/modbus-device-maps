@@ -1,0 +1,117 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "saci/m2dl2",
+  "manufacturer": "Saci",
+  "manufacturer_slug": "saci",
+  "model": "M2DL2",
+  "slug": "m2dl2",
+  "title": "Saci M2DL2 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Saci M2DL2 power meter, with 12 representative energy, power, voltage signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Energy",
+    "Power",
+    "Voltage",
+    "Current",
+    "Frequency"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Voltage V",
+      "display_address": "300012",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Current A",
+      "display_address": "300013",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Active power W",
+      "display_address": "300014",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Global active energy accumulator kWh",
+      "display_address": "300000",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Frequency Hz",
+      "display_address": "300017",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "Export active energy accumulator kWh",
+      "display_address": "300008",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Import active energy accumulator kWh",
+      "display_address": "300010",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Reactive power W",
+      "display_address": "300015",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Power factor",
+      "display_address": "300016",
+      "data_type": "UINT16",
+      "unit": "PF",
+      "category": "Power"
+    },
+    {
+      "name": "Import reactive energy accumulator Q1 Q2 kWh",
+      "display_address": "300256",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Export reactive energy accumulator Q3 Q4 kWh",
+      "display_address": "300258",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Q1 reactive energy accumulator kWh",
+      "display_address": "300260",
+      "data_type": "UINT32",
+      "unit": "kWh",
+      "category": "Energy"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=saci/m2dl2",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=saci/m2dl2",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

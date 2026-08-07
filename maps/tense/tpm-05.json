@@ -1,0 +1,113 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "tense/tpm-05",
+  "manufacturer": "Tense",
+  "manufacturer_slug": "tense",
+  "model": "TPM 05",
+  "slug": "tpm-05",
+  "title": "Tense TPM 05 Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the Tense TPM 05 power meter, with 12 representative harmonics signals.",
+  "device_type": "Power Meter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Harmonics"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "L2 THDV",
+      "display_address": "402001",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "L3 THDV",
+      "display_address": "402002",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "3P THDV",
+      "display_address": "402003",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "L1 THDI",
+      "display_address": "402004",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "L2 THDI",
+      "display_address": "402005",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "L3 THDI",
+      "display_address": "402006",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "3P THDI",
+      "display_address": "402007",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "VL1 harmonic 2",
+      "display_address": "402011",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "VL1 harmonic 3",
+      "display_address": "402012",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "VL1 harmonic 4",
+      "display_address": "402013",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "VL1 harmonic 63",
+      "display_address": "402072",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Harmonics"
+    },
+    {
+      "name": "VL2 harmonic 2",
+      "display_address": "402073",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Harmonics"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=tense/tpm-05",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=tense/tpm-05",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}

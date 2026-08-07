@@ -1,0 +1,118 @@
+{
+  "$schema": "https://modbus-monitor.github.io/modbus-device-maps/schemas/modbus-map.schema.json",
+  "schema_version": "1.1.0",
+  "id": "solarx-power/hybrid-x1-hybrid-x3-x1ac",
+  "manufacturer": "SolarX Power",
+  "manufacturer_slug": "solarx-power",
+  "model": "Hybrid X1,Hybrid X3,X1AC",
+  "slug": "hybrid-x1-hybrid-x3-x1ac",
+  "title": "SolarX Power Hybrid X1,Hybrid X3,X1AC Modbus Register Map",
+  "description": "Official Modbus Monitor XPF preview for the SolarX Power Hybrid X1,Hybrid X3,X1AC solar inverter, with 12 representative current, voltage, power signals.",
+  "device_type": "Solar Inverter",
+  "protocol": "Modbus RTU / Modbus TCP",
+  "categories": [
+    "Current",
+    "Voltage",
+    "Power",
+    "Energy",
+    "Frequency",
+    "Status"
+  ],
+  "address_display_convention": "Display address copied from the official XPF map preview. Modbus reference-number and zero-based offset conventions vary by device; verify the manufacturer manual before polling or writing.",
+  "registers": [
+    {
+      "name": "Pv voltage1 Hybrid V",
+      "display_address": "300003",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Grid current X1 V",
+      "display_address": "300001",
+      "data_type": "INT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Grid power X1 W",
+      "display_address": "300002",
+      "data_type": "INT16",
+      "unit": "kW",
+      "category": "Power"
+    },
+    {
+      "name": "Output energy ChargeLSB KWh",
+      "display_address": "300029",
+      "data_type": "UINT16",
+      "unit": "kWh",
+      "category": "Energy"
+    },
+    {
+      "name": "Grid frequency X1 Hz",
+      "display_address": "300007",
+      "data_type": "UINT16",
+      "unit": "Hz",
+      "category": "Frequency"
+    },
+    {
+      "name": "BMS connect state",
+      "display_address": "300023",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Status"
+    },
+    {
+      "name": "Temperature",
+      "display_address": "300008",
+      "data_type": "INT16",
+      "unit": "degC",
+      "category": "Temperature"
+    },
+    {
+      "name": "Run mode",
+      "display_address": "300009",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "General"
+    },
+    {
+      "name": "Pv voltage2 Hybrid V",
+      "display_address": "300004",
+      "data_type": "UINT16",
+      "unit": "V",
+      "category": "Voltage"
+    },
+    {
+      "name": "Pv current1 Hybrid A",
+      "display_address": "300005",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Pv current2 Hybrid A",
+      "display_address": "300006",
+      "data_type": "UINT16",
+      "unit": "-",
+      "category": "Current"
+    },
+    {
+      "name": "Powerdc1 Hybrid W",
+      "display_address": "300010",
+      "data_type": "UINT16",
+      "unit": "kW",
+      "category": "Power"
+    }
+  ],
+  "register_count": 12,
+  "guide_status": "upcoming",
+  "documentation_url": null,
+  "product": {
+    "name": "Modbus Monitor XPF",
+    "full_map_url": "https://www.modbusmonitor.com/download?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=solarx-power/hybrid-x1-hybrid-x3-x1ac",
+    "tester_url": "https://www.modbusmonitor.com/modbus-tester?utm_source=github&utm_medium=referral&utm_campaign=device_maps&utm_content=solarx-power/hybrid-x1-hybrid-x3-x1ac",
+    "request_url": "https://github.com/Modbus-Monitor/modbus-device-maps/issues/new/choose"
+  },
+  "license_notice": "See DATA_LICENSE.md and DISCLAIMER.md in the repository root."
+}
