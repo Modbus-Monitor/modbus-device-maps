@@ -27,12 +27,14 @@ jobs:
           python-version: "3.12"
       - name: Validate catalog
         run: python scripts/validate_catalog.py
+      - name: Normalize Dataset structured data
+        run: python scripts/update_dataset_metadata.py
       - name: Assemble static site
         shell: bash
         run: |
           mkdir _site
           cp index.html catalog.json robots.txt sitemap.xml .nojekyll DISCLAIMER.md DATA_LICENSE.md google08d7bd0a4e17da63.html BingSiteAuth.xml _site/
-          cp -R assets data maps pages schemas _site/
+          cp -R assets data data-license maps pages schemas _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
