@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://modbus-monitor.github.io/modbus-device-maps/schemas/catalog.schema.json",
+  "title": "Modbus Device Maps public logical catalog",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "catalog_version",
+    "catalog_generated_utc",
+    "id_policy",
+    "map_count",
+    "maps"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "catalog_version": { "type": "string" },
+    "catalog_generated_utc": { "type": "string", "format": "date-time" },
+    "id_policy": { "const": "manufacturer-slug/device-slug" },
+    "map_count": { "type": "integer", "minimum": 0 },
+    "deprecated_fields": { "type": "object" },
+    "maps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "map_version",
+          "map_schema_version",
+          "source_type",
+          "verification_level",
+          "supported_protocols",
+          "availability",
+          "aliases",
+          "preview_register_count",
+          "full_register_count"
+        ],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*/[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "map_version": { "type": "string" },
+          "map_schema_version": { "type": "integer", "minimum": 1 },
+          "supported_protocols": { "type": "array", "items": { "enum": ["RTU", "TCP", "ASCII", "UDP"] }, "uniqueItems": true },
+          "aliases": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+          "preview_register_count": { "type": "integer", "minimum": 1 },
+          "full_register_count": { "type": ["integer", "null"], "minimum": 1 }
+        }
+      }
+    }
+  }
+}

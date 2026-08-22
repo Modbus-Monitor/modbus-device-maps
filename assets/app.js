@@ -49,9 +49,10 @@
     const manufacturer = document.createElement("span");
     manufacturer.textContent = item.manufacturer;
     const count = document.createElement("span");
-    count.textContent = `${item.register_count} signals`;
+    const previewRegisterCount = item.preview_register_count ?? item.register_count;
+    count.textContent = `${previewRegisterCount} signals`;
     if (item.featured) {
-      count.textContent = `◆ popular · ${item.register_count}`;
+      count.textContent = `◆ popular · ${previewRegisterCount}`;
       count.className = "featured-tag";
     }
     top.append(manufacturer, count);
