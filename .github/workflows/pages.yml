@@ -35,6 +35,8 @@ jobs:
           mkdir _site
           cp index.html catalog.json robots.txt sitemap.xml .nojekyll DISCLAIMER.md DATA_LICENSE.md google08d7bd0a4e17da63.html BingSiteAuth.xml _site/
           cp -R assets data data-license maps pages schemas _site/
+      - name: Apply exact HTML redirects
+        run: python scripts/apply_html_redirects.py --site-dir _site --verify-live-targets
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
