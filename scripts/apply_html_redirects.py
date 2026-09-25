@@ -18,6 +18,12 @@ OLD = 'https://modbus-monitor.github.io/modbus-device-maps/'
 NEW = 'https://docs.quantumbitsolutions.com/'
 
 
+def portable_sha256(path: Path) -> str:
+    """Hash text content with platform-independent LF line endings."""
+    content = path.read_bytes().replace(b'\r\n', b'\n')
+    return hashlib.sha256(content).hexdigest()
+
+
 class TargetPage(HTMLParser):
     def __init__(self):
         super().__init__()
@@ -50,7 +56,7 @@ def verify_live_target(mapping):
 def apply(site: Path, verify_live: bool = False) -> None:
     manifest = json.loads((ROOT / 'html-redirects.json').read_text(encoding='utf-8'))
     for relative, digest in manifest['source_sha256'].items():
-        if hashlib.sha256((site / relative).read_bytes()).hexdigest() != digest:
+        if portable_sha256(site / relative) != digest:
             raise ValueError(f'Public data changed; regenerate and review migration: {relative}')
     mappings = manifest['redirects']
     catalog = json.loads((site / 'catalog.json').read_text(encoding='utf-8'))
